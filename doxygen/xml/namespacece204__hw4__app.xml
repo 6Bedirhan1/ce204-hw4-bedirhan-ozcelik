@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__app" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_app</compoundname>
+    <innerclass refid="classce204__hw4__app_1_1ce204__hw4__app" prot="public">ce204_hw4_app::ce204_hw4_app</innerclass>
+    <briefdescription>
+<para>Contains classes related to car objects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_app/ce204_hw4_app.java" line="7" column="1"/>
+  </compounddef>
+</doxygen>

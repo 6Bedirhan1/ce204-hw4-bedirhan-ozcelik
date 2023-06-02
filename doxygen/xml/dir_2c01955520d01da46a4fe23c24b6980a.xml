@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_2c01955520d01da46a4fe23c24b6980a" kind="dir">
+    <compoundname>ce204-hw4/src/main/java</compoundname>
+    <innerdir refid="dir_0f82eefea86880d06eeb50fd926591f2">ce204-hw4/src/main/java/ce204_hw4_app</innerdir>
+    <innerdir refid="dir_9bcb43ba70f503797f8717188cbf42ea">ce204-hw4/src/main/java/ce204_hw4_library</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/"/>
+  </compounddef>
+</doxygen>

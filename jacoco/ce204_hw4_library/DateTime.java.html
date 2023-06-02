@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DateTime.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204-hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_library</a> &gt; <span class="el_source">DateTime.java</span></div><h1>DateTime.java</h1><pre class="source lang-java linenums">package ce204_hw4_library;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+import java.util.Objects;
+import java.sql.Date;
+
+public class DateTime {
+
+  private long advance;
+  private long time;
+  private int day;
+  private int month;
+  private int year;
+  private DateTime returnDate;
+  /**
+     * @name DateTime
+     * Identify a code smell in this java code.
+     **/
+<span class="fc" id="L20">  public DateTime() {</span>
+<span class="fc" id="L21">    time = System.currentTimeMillis();</span>
+<span class="fc" id="L22">  }</span>
+  /**
+     * @name DateTime
+     * @param [in] setClockForwardInDays [\b int]
+     * Explain how you will refactor the code to get rid of the code smell.
+     **/
+<span class="fc" id="L28">  public DateTime(int setClockForwardInDays) {</span>
+<span class="fc" id="L29">    advance = ((setClockForwardInDays * 24L + 0) * 60L) * 60000L;</span>
+<span class="fc" id="L30">    time = System.currentTimeMillis() + advance;</span>
+<span class="fc" id="L31">  }</span>
+  /**
+     * @name DateTime
+     * @param [in] startDate [\b DateTime]
+     * @param [in] setClockForwardInDays [\b int]
+     * This class is useful for representing human-based time of day.
+     **/
+<span class="fc" id="L38">  public DateTime(DateTime startDate, int setClockForwardInDays) {</span>
+<span class="fc" id="L39">    advance = ((setClockForwardInDays * 24L + 0) * 60L) * 60000L;</span>
+<span class="fc" id="L40">    time = startDate.getTime() + advance;</span>
+<span class="fc" id="L41">  }</span>
+  /**
+     * @name DateTime
+     * @param [in] day [\b int]
+     * @param [in] month [\b int]
+     * @param [in] year [\b int]
+     * It could also be used to create a digital clock, as shown in the following example.
+     **/
+<span class="fc" id="L49">  public DateTime(int day, int month, int year) {</span>
+<span class="fc" id="L50">    setDate(day, month, year);</span>
+<span class="fc" id="L51">  }</span>
+  /**
+     * @name getTime
+     * @retval [\b long]
+     * There are also methods for adding or subtracting hours, minutes, days.
+     **/
+  public long getTime() {
+<span class="fc" id="L58">    return time;</span>
+  }
+  /**
+     * @name getNameOfDay
+     * @retval [\b String]
+     * The following example shows a few of these methods.
+     **/
+  public String getNameOfDay() {
+<span class="fc" id="L66">	    SimpleDateFormat sdf = new SimpleDateFormat(&quot;EEEE&quot;, Locale.ENGLISH);</span>
+<span class="fc" id="L67">	    return sdf.format(time);</span>
+	}
+  /**
+     * @name toString
+     * @retval [\b String]
+     * DateTime is the standard implementation of an unmodifiable datetime class.
+     **/
+  public String toString() {
+<span class="fc" id="L75">    return getFormattedDate();</span>
+  }
+  /**
+     * @name getCurrentTime
+     * @retval [\b String]
+     * it represents an exact point on the time-line.
+     **/
+  public static String getCurrentTime() {
+<span class="fc" id="L83">    Date date = new Date(System.currentTimeMillis()); // returns current Date/Time</span>
+<span class="fc" id="L84">    return date.toString();</span>
+  }
+  /**
+     * @name getFormattedDate
+     * @retval [\b String]
+     * DateTime is thread-safe and immutable.
+     **/
+  public String getFormattedDate() {
+<span class="fc" id="L92">    SimpleDateFormat sdf = new SimpleDateFormat(&quot;dd/MM/yyyy&quot;);</span>
+<span class="fc" id="L93">    long currentTime = getTime();</span>
+<span class="fc" id="L94">    Date gct = new Date(currentTime);</span>
+<span class="fc" id="L95">    return sdf.format(gct);</span>
+  }
+  /**
+     * @name getEightDigitDate
+     * @retval [\b String]
+     * Constructs an instance set to the current system millisecond time using ISOChronology in the default time zone.
+     **/
+  public String getEightDigitDate() {
+<span class="fc" id="L103">    SimpleDateFormat sdf = new SimpleDateFormat(&quot;ddMMyyyy&quot;);</span>
+<span class="fc" id="L104">    long currentTime = getTime();</span>
+<span class="fc" id="L105">    Date gct = new Date(currentTime);</span>
+<span class="fc" id="L106">    return sdf.format(gct);</span>
+  }
+
+  // returns difference in days
+  /**
+     * @name diffDays
+     * @param [in] endDate [\b DateTime]
+     * @param [in] startDate [\b DateTime]
+     * @retval [\b int]
+     * Constructs an instance set to the current system millisecond time using the specified chronology.
+     **/
+  public static int diffDays(DateTime endDate, DateTime startDate) {
+<span class="fc" id="L118">    final long HOURS_IN_DAY = 24L;</span>
+<span class="fc" id="L119">    final int MINUTES_IN_HOUR = 60;</span>
+<span class="fc" id="L120">    final int SECONDS_IN_MINUTES = 60;</span>
+<span class="fc" id="L121">    final int MILLISECONDS_IN_SECOND = 1000;</span>
+<span class="fc" id="L122">    long convertToDays = HOURS_IN_DAY * MINUTES_IN_HOUR * SECONDS_IN_MINUTES * MILLISECONDS_IN_SECOND;</span>
+<span class="fc" id="L123">    long hirePeriod = endDate.getTime() - startDate.getTime();</span>
+<span class="fc" id="L124">    double difference = (double) hirePeriod / (double) convertToDays;</span>
+<span class="fc" id="L125">    int round = (int) Math.round(difference);</span>
+<span class="fc" id="L126">    return round;</span>
+  }
+  /**
+     * @name setDate
+     * @param [in] day [\b int]
+     * @param [in] month [\b int]
+     * @param [in] year [\b int]
+     * Constructs an instance set to the current system millisecond time using ISOChronology in the specified time zone.
+     **/
+  private void setDate(int day, int month, int year) {
+<span class="fc" id="L136">    Calendar calendar = Calendar.getInstance();</span>
+<span class="fc" id="L137">    calendar.set(year, month - 1, day, 0, 0);</span>
+<span class="fc" id="L138">    java.util.Date date = calendar.getTime();</span>
+<span class="fc" id="L139">    time = date.getTime();</span>
+<span class="fc" id="L140">  }</span>
+
+  // Advances date/time by specified days, hours and mins for testing purposes
+  /**
+     * @name setAdvance
+     * @param [in] days [\b int]
+     * @param [in] hours [\b int]
+     * @param [in] mins [\b int]
+     * Constructs an instance from datetime field values using the specified chronology.
+     **/
+  public void setAdvance(int days, int hours, int mins) {
+<span class="fc" id="L151">    advance = ((days * 24L + hours) * 60L) * 60000L;</span>
+<span class="fc" id="L152">  }</span>
+
+  @Override
+  /**
+     * @name equals
+     * @param [in] obj [\b Object]
+     * @retval [\b boolean]
+     * Constructs an instance from datetime field values using ISOChronology in the specified time zone.
+     **/
+  public boolean equals(Object obj) {
+<span class="fc bfc" id="L162" title="All 2 branches covered.">    if (this == obj) {</span>
+<span class="fc" id="L163">      return true;</span>
+    }
+
+    //      if (obj == null || getClass() != obj.getClass()) {
+    //          return false;
+    //      }
+    //      DateTime other = (DateTime) obj;
+<span class="fc" id="L170">    return true;</span>
+    //      return this.day == other.day &amp;&amp; this.month == other.month &amp;&amp; this.year == other.year;
+  }
+
+  @Override
+  /**
+     * @name hashCode
+     * @retval [\b int]
+     * Constructs an instance from an Object that represents a datetime
+     **/
+  public int hashCode() {
+<span class="fc" id="L181">    return Objects.hash(day, month, year);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

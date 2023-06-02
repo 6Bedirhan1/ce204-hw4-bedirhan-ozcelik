@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_9bcb43ba70f503797f8717188cbf42ea" kind="dir">
+    <compoundname>ce204-hw4/src/main/java/ce204_hw4_library</compoundname>
+    <innerfile refid="_car_8java">Car.java</innerfile>
+    <innerfile refid="_car_rental_system_8java">CarRentalSystem.java</innerfile>
+    <innerfile refid="_date_time_8java">DateTime.java</innerfile>
+    <innerfile refid="_rental_record_8java">RentalRecord.java</innerfile>
+    <innerfile refid="_user_8java">User.java</innerfile>
+    <innerfile refid="_van_8java">Van.java</innerfile>
+    <innerfile refid="_vehicle_8java">Vehicle.java</innerfile>
+    <innerfile refid="_vehicle_type_8java">VehicleType.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library/"/>
+  </compounddef>
+</doxygen>

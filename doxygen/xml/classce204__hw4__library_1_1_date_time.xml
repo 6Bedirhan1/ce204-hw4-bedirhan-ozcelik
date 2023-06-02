@@ -1,0 +1,636 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library_1_1_date_time" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library::DateTime</compoundname>
+    <derivedcompoundref refid="classce204__hw4__library_1_1_rental_record" prot="public" virt="non-virtual">ce204_hw4_library.RentalRecord</derivedcompoundref>
+      <sectiondef kind="user-defined">
+      <header>DateTime</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] It could also be used to create a digital clock, as shown in the following example. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1a36364c997512523cb3240365970095ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_library.DateTime.DateTime</definition>
+        <argsstring>()</argsstring>
+        <name>DateTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="20" column="10" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1aae463fc4e83a96d0907b11a60108f502" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_library.DateTime.DateTime</definition>
+        <argsstring>(int setClockForwardInDays)</argsstring>
+        <name>DateTime</name>
+        <param>
+          <type>int</type>
+          <declname>setClockForwardInDays</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="28" column="10" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1ae0e82b73838c80f4c582fe6f047d87ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_library.DateTime.DateTime</definition>
+        <argsstring>(DateTime startDate, int setClockForwardInDays)</argsstring>
+        <name>DateTime</name>
+        <param>
+          <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>setClockForwardInDays</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="38" column="10" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="38" bodyend="41"/>
+        <references refid="classce204__hw4__library_1_1_date_time_1ae7e5f4f1b5e6123224396d7611952e74" compoundref="_date_time_8java" startline="57" endline="59">ce204_hw4_library.DateTime.getTime</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1ac3a14c9d35e41e749f8534e639a2616b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_library.DateTime.DateTime</definition>
+        <argsstring>(int day, int month, int year)</argsstring>
+        <name>DateTime</name>
+        <param>
+          <type>int</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="49" column="10" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="49" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getTime</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1ae7e5f4f1b5e6123224396d7611952e74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long ce204_hw4_library.DateTime.getTime</definition>
+        <argsstring>()</argsstring>
+        <name>getTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="57" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="57" bodyend="59"/>
+        <referencedby refid="classce204__hw4__library_1_1_date_time_1ae0e82b73838c80f4c582fe6f047d87ae" compoundref="_date_time_8java" startline="38" endline="41">ce204_hw4_library.DateTime.DateTime</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_date_time_1a42c683a7031d36c0d4d5b84d655b7c55" compoundref="_date_time_8java" startline="117" endline="127">ce204_hw4_library.DateTime.diffDays</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_date_time_1aacdf9d3332576ae4513476d2cc01bd0c" compoundref="_date_time_8java" startline="102" endline="107">ce204_hw4_library.DateTime.getEightDigitDate</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_date_time_1ac915b812f141dd49404e56cfcb6371db" compoundref="_date_time_8java" startline="91" endline="96">ce204_hw4_library.DateTime.getFormattedDate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getNameOfDay</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1a6e343334ff807c1d02f1592cff3fae75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.DateTime.getNameOfDay</definition>
+        <argsstring>()</argsstring>
+        <name>getNameOfDay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="65" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="65" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>toString</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1ac2435914de2842fe86ee1eb29e6a796b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.DateTime.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplementedby refid="classce204__hw4__library_1_1_rental_record_1a162c2bb56986067597e57f036768cda8">toString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="74" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="74" bodyend="76"/>
+        <references refid="classce204__hw4__library_1_1_date_time_1ac915b812f141dd49404e56cfcb6371db" compoundref="_date_time_8java" startline="91" endline="96">ce204_hw4_library.DateTime.getFormattedDate</references>
+        <referencedby refid="classce204__hw4__library_1_1_rental_record_1a5a065ee6c70a35fa0b44d42e83cc64a0" compoundref="_rental_record_8java" startline="77" endline="87">ce204_hw4_library.RentalRecord.getDetails</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a83836384ff21c35ec627d9dc7b2087de" compoundref="_car_8java" startline="167" endline="172">ce204_hw4_library.Car.toString</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_rental_record_1a162c2bb56986067597e57f036768cda8" compoundref="_rental_record_8java" startline="64" endline="71">ce204_hw4_library.RentalRecord.toString</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a98cc0a70219af20033fc1553903e3b48" compoundref="_van_8java" startline="167" endline="172">ce204_hw4_library.Van.toString</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getFormattedDate</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1ac915b812f141dd49404e56cfcb6371db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.DateTime.getFormattedDate</definition>
+        <argsstring>()</argsstring>
+        <name>getFormattedDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="91" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="91" bodyend="96"/>
+        <references refid="classce204__hw4__library_1_1_date_time_1ae7e5f4f1b5e6123224396d7611952e74" compoundref="_date_time_8java" startline="57" endline="59">ce204_hw4_library.DateTime.getTime</references>
+        <referencedby refid="classce204__hw4__library_1_1_date_time_1ac2435914de2842fe86ee1eb29e6a796b" compoundref="_date_time_8java" startline="74" endline="76">ce204_hw4_library.DateTime.toString</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getEightDigitDate</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1aacdf9d3332576ae4513476d2cc01bd0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.DateTime.getEightDigitDate</definition>
+        <argsstring>()</argsstring>
+        <name>getEightDigitDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="102" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="102" bodyend="107"/>
+        <references refid="classce204__hw4__library_1_1_date_time_1ae7e5f4f1b5e6123224396d7611952e74" compoundref="_date_time_8java" startline="57" endline="59">ce204_hw4_library.DateTime.getTime</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>setAdvance</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">days</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">hours</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mins</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] Constructs an instance from datetime field values using the specified chronology. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1a5d2fad17cb6bd08792b3c459919c6249" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.DateTime.setAdvance</definition>
+        <argsstring>(int days, int hours, int mins)</argsstring>
+        <name>setAdvance</name>
+        <param>
+          <type>int</type>
+          <declname>days</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mins</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="150" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="150" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>equals</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>Object</bold>] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1ad4384cd72552a8717fc048294ac9ea25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ce204_hw4_library.DateTime.equals</definition>
+        <argsstring>(Object obj)</argsstring>
+        <name>equals</name>
+        <param>
+          <type>Object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="161" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="161" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>hashCode</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1a1bf1444ff511ddb15966cfd922c5656b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_library.DateTime.hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="180" column="14" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="180" bodyend="182"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getCurrentTime</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1abf689ee72b7c887b0ff9c21111a832ff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String ce204_hw4_library.DateTime.getCurrentTime</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="82" column="24" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="82" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>diffDays</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">endDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">startDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></bold>] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1a42c683a7031d36c0d4d5b84d655b7c55" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ce204_hw4_library.DateTime.diffDays</definition>
+        <argsstring>(DateTime endDate, DateTime startDate)</argsstring>
+        <name>diffDays</name>
+        <param>
+          <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+          <declname>endDate</declname>
+        </param>
+        <param>
+          <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+          <declname>startDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="117" column="21" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="117" bodyend="127"/>
+        <references refid="classce204__hw4__library_1_1_date_time_1ae7e5f4f1b5e6123224396d7611952e74" compoundref="_date_time_8java" startline="57" endline="59">ce204_hw4_library.DateTime.getTime</references>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a9b4ba6f85966bcf9d5d17d6e87ce9fc8" compoundref="_car_8java" startline="151" endline="158">ce204_hw4_library.Car.completeMaintenance</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1ab59cb8edb63b5cab2a2f38a8c0844c90" compoundref="_van_8java" startline="153" endline="160">ce204_hw4_library.Van.completeMaintenance</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1aaeebac4b9457fc769df9a0b122457595" compoundref="_car_8java" startline="106" endline="111">ce204_hw4_library.Car.getLateFee</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1aacf522beea0ccbfb1bbf023deebc9ba5" compoundref="_van_8java" startline="108" endline="113">ce204_hw4_library.Van.getLateFee</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a7fc22bfdeb785cb4db9dd0279959dcdf" compoundref="_car_8java" startline="119" endline="143">ce204_hw4_library.Car.returnVehicle</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a0a021645c9edd9ecff298897601f155a" compoundref="_van_8java" startline="121" endline="145">ce204_hw4_library.Van.returnVehicle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>setDate</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] Constructs an instance set to the current system millisecond time using ISOChronology in the specified time zone. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_date_time_1a278c97d31f0e4598230ad99ff6cb8d1b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.DateTime.setDate</definition>
+        <argsstring>(int day, int month, int year)</argsstring>
+        <name>setDate</name>
+        <param>
+          <type>int</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="135" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="135" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_date_time_1aa092cd840ccdabf26167d7171c06d374" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long ce204_hw4_library.DateTime.advance</definition>
+        <argsstring></argsstring>
+        <name>advance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="10" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_date_time_1afb480037f38e76b9ba99864aade9a687" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long ce204_hw4_library.DateTime.time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="11" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_date_time_1a6ee7c5368e0108e900dbf64e30f71596" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_library.DateTime.day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="12" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_date_time_1ab482ec790ae5148447e1010e8c1a32d3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_library.DateTime.month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="13" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_date_time_1a4e9b2b43de4d2a4be190b013f74a1f64" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_library.DateTime.year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="14" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_date_time_1ad0e58f8292d661b0fdfd1def4e3b4ad5" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime ce204_hw4_library.DateTime.returnDate</definition>
+        <argsstring></argsstring>
+        <name>returnDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="15" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ce204_hw4_library.RentalRecord</label>
+        <link refid="classce204__hw4__library_1_1_rental_record"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_library.DateTime</label>
+        <link refid="classce204__hw4__library_1_1_date_time"/>
+      </node>
+    </inheritancegraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" line="8" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/DateTime.java" bodystart="8" bodyend="183"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library_1_1_date_time_1aa092cd840ccdabf26167d7171c06d374" prot="private" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>advance</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a36364c997512523cb3240365970095ff" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>DateTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1aae463fc4e83a96d0907b11a60108f502" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>DateTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ae0e82b73838c80f4c582fe6f047d87ae" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>DateTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ac3a14c9d35e41e749f8534e639a2616b" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>DateTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a6ee7c5368e0108e900dbf64e30f71596" prot="private" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>day</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a42c683a7031d36c0d4d5b84d655b7c55" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>diffDays</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ad4384cd72552a8717fc048294ac9ea25" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>equals</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1abf689ee72b7c887b0ff9c21111a832ff" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>getCurrentTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1aacdf9d3332576ae4513476d2cc01bd0c" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>getEightDigitDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ac915b812f141dd49404e56cfcb6371db" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>getFormattedDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a6e343334ff807c1d02f1592cff3fae75" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>getNameOfDay</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ae7e5f4f1b5e6123224396d7611952e74" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>getTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a1bf1444ff511ddb15966cfd922c5656b" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>hashCode</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ab482ec790ae5148447e1010e8c1a32d3" prot="private" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>month</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ad0e58f8292d661b0fdfd1def4e3b4ad5" prot="private" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>returnDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a5d2fad17cb6bd08792b3c459919c6249" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>setAdvance</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a278c97d31f0e4598230ad99ff6cb8d1b" prot="private" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>setDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1afb480037f38e76b9ba99864aade9a687" prot="private" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>time</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ac2435914de2842fe86ee1eb29e6a796b" prot="public" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>toString</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a4e9b2b43de4d2a4be190b013f74a1f64" prot="private" virt="non-virtual"><scope>ce204_hw4_library::DateTime</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

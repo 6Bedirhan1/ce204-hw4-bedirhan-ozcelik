@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Vehicle.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204-hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_library</a> &gt; <span class="el_source">Vehicle.java</span></div><h1>Vehicle.java</h1><pre class="source lang-java linenums">package ce204_hw4_library;
+
+public class Vehicle {
+  protected String Vehicle_id;
+  protected int Year;
+  protected String Make;
+  protected String Model;
+  public int vehicleStatus;
+  protected VehicleType vehicleType;
+<span class="fc" id="L10">  public RentalRecord records[]= new RentalRecord[10];</span>
+
+  // Constructor to accept the details of a vehicle
+  /**
+   * @name Vehicle
+   * @param [in] VehicleId [\b String]
+   * @param [in] Year [\b int]
+   * @param [in] Make [\b String]
+   * @param [in] Model [\b String]
+   * @param [in] status [\b int]
+   * @param [in] vehicleType [\b VehicleType]
+   *the designation of motor vehicle types that include sedans, sport utility vehicles, and trucks, or different categories.
+   **/
+<span class="fc" id="L23">  public Vehicle(String VehicleId,int Year,String Make,String Model,int status,VehicleType vehicleType) {</span>
+<span class="fc" id="L24">    this.Vehicle_id=VehicleId;</span>
+<span class="fc" id="L25">    this.Year=Year;</span>
+<span class="fc" id="L26">    this.Make=Make;</span>
+<span class="fc" id="L27">    this.Model= Model;</span>
+<span class="fc" id="L28">    this.vehicleStatus=status;</span>
+<span class="fc" id="L29">    this.vehicleType=vehicleType;</span>
+<span class="fc" id="L30">  }</span>
+
+  /**
+   * @name getVehicleId
+   * @retval [\b String]
+   * Method to get vehicle ID
+   **/
+  public String getVehicleId() {
+<span class="fc" id="L38">    return this.Vehicle_id;</span>
+  }
+
+  /**
+   * @name rent
+   * @param [in] customerId [\b String]
+   * @param [in] rentDate [\b DateTime]
+   * @param [in] numOfRentDay [\b int]
+   * @retval [\b boolean]
+   * Used to rent either available car or available van
+   **/
+  public boolean rent(String customerId, DateTime rentDate, int numOfRentDay) {
+<span class="fc" id="L50">    String typeOfVehicle = &quot;van&quot;;</span>
+
+<span class="pc bpc" id="L52" title="1 of 2 branches missed.">    if(this.Vehicle_id.contains(&quot;C_&quot;))</span>
+<span class="fc" id="L53">      typeOfVehicle=&quot;car&quot;;</span>
+
+<span class="pc bpc" id="L55" title="2 of 8 branches missed.">    if(this.vehicleStatus!=0 || numOfRentDay&lt;this.vehicleType.canBeRentedForMinimumDays(rentDate,typeOfVehicle) || numOfRentDay&gt;=14||numOfRentDay&lt;2) {</span>
+<span class="fc" id="L56">      return false;</span>
+    }
+    //          else if( typeOfVehicle.equals(&quot;van&quot;) )
+    //          {
+    //        if(this.vehicleStatus!=0 || this.vehicleType.IsUnderMaintenance(rentDate,typeOfVehicle,numOfRentDay) ||  numOfRentDay==0)
+    //              return false;
+    //          else
+    //        {
+    //        String rentId= this.Vehicle_id+&quot;_&quot;+customerId+&quot;_&quot;+rentDate. getEightDigitDate();
+    //              this.records[this.getLastElementIndex()+1]=new RentalRecord(rentId,rentDate,new DateTime(rentDate,numOfRentDay));
+    //              this.vehicleStatus=1;
+    //              return true;
+    //        }
+    //          }
+    else {
+<span class="fc" id="L71">      String rentId= this.Vehicle_id+&quot;_&quot;+customerId+&quot;_&quot;+rentDate. getEightDigitDate();</span>
+<span class="fc" id="L72">      this.records[this.getLastElementIndex()+1]=new RentalRecord(rentId,rentDate,new DateTime(rentDate,numOfRentDay));</span>
+<span class="fc" id="L73">      this.vehicleStatus=1;</span>
+<span class="fc" id="L74">      return true;</span>
+    }
+  }
+  /**
+   * @name performMaintenance
+   * @retval [\b boolean]
+   * sets the vehicle status to available after maintenance
+   **/
+  public boolean performMaintenance() {
+    //        if(this.vehicleStatus==1 || this.vehicleStatus==2)
+    //            return false;
+<span class="fc" id="L85">    this.vehicleStatus=2;</span>
+<span class="fc" id="L86">    return true;</span>
+  }
+  /**
+   * @name toString
+   * @retval [\b String]
+   * Method used to get details of vehicle
+   **/
+  public String toString() {
+<span class="fc" id="L94">    String repository=&quot;&quot;;</span>
+
+<span class="fc bfc" id="L96" title="All 2 branches covered.">    if(this.Vehicle_id.contains(&quot;C_&quot;)) {</span>
+<span class="fc" id="L97">      repository=this.Vehicle_id+&quot;:&quot;+String.valueOf(this.Year)+&quot;:&quot;+this.Make+&quot;:&quot;+this.Model+&quot;:15&quot;+&quot;:&quot;;</span>
+    }
+
+<span class="pc bpc" id="L100" title="1 of 2 branches missed.">    switch(this.vehicleStatus) {</span>
+      case 0:
+<span class="fc" id="L102">        repository+=&quot;Available&quot;;</span>
+        break;
+        //            case 1: repository+=&quot;Rented&quot;;
+        //                break;
+        //            case 2: repository+=&quot;Maintenance&quot;;
+        //                break;
+    }
+
+<span class="fc" id="L110">    return repository;</span>
+  }
+
+  /**
+   * @name getDetails
+   * @retval [\b String]
+   * Method used to get details of car or van with their rental history
+   **/
+  public String getDetails() {
+<span class="fc" id="L119">    String data = &quot;Vehicle ID:\t&quot;+this.Vehicle_id+&quot;\n Year:\t &quot;+String.valueOf(this.Year)+&quot;\n Car Name:\t&quot;+this.Make+&quot;\n Model Name:\t&quot;+this.Model;</span>
+
+<span class="fc bfc" id="L121" title="All 2 branches covered.">    if(this.Vehicle_id.contains(&quot;C_&quot;))</span>
+<span class="fc" id="L122">      data+=String.valueOf(this.vehicleType.getSeats(&quot;car&quot;))+&quot;\n Status:\t&quot;;</span>
+
+<span class="pc bpc" id="L124" title="1 of 2 branches missed.">    switch(this.vehicleStatus) {</span>
+      case 0:
+<span class="fc" id="L126">        data+=&quot;Available&quot;;</span>
+        break;
+        //            case 1: data+=&quot;Rented&quot;;
+        //                break;
+        //            case 2: data+=&quot;Maintenance&quot;;
+        //                break;
+    }
+
+<span class="fc" id="L134">    return data;</span>
+  }
+
+  /**
+   * @name getLastElementIndex
+   * @retval [\b int]
+   * Method used to get last element index
+   **/
+  public int getLastElementIndex() {
+<span class="fc" id="L143">    int index=0;</span>
+
+<span class="fc bfc" id="L145" title="All 2 branches covered.">    for(index=0; this.records[index]!=null; index++);</span>
+
+<span class="fc" id="L147">    return index-1;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

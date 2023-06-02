@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classce204__hw4__library_1_1_car" kind="class"><name>ce204_hw4_library::Car</name>
+    <member refid="classce204__hw4__library_1_1_car_1a982d928640517d4cd0d8ad8c4ae33466" kind="function"><name>Car</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1a540d9d67ae5143dc97e526c8ad37d04a" kind="function"><name>getYear</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1aa938824260708b5aa4442b58bbddf3fe" kind="function"><name>getMake</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1aaee9e117f111ff0538f4fef7b23ca4a8" kind="function"><name>getModel</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1a1adf41fa7d6bfb75857453b8fe2faa72" kind="function"><name>setVehicleStatus</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1a661cb3fc1819b77be1800103cdd88bfc" kind="function"><name>getVehicleStatus</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1affd6df5570a0d511ad065eb552de8089" kind="function"><name>getVehicleType</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1ab5df62aa4cf23de81eecb39089df8e47" kind="function"><name>addRentalRecord</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1aff23d293cd79bbc2bfe7a951c2113b70" kind="function"><name>getRentalRecords</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1aaeebac4b9457fc769df9a0b122457595" kind="function"><name>getLateFee</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1a7fc22bfdeb785cb4db9dd0279959dcdf" kind="function"><name>returnVehicle</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1a9b4ba6f85966bcf9d5d17d6e87ce9fc8" kind="function"><name>completeMaintenance</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1a83836384ff21c35ec627d9dc7b2087de" kind="function"><name>toString</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1ad940f6e27b9d57438bb900f04bfba4aa" kind="function"><name>getDetails</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1ac5c1ae19a1675a5dac27ce76370ee6fe" kind="variable"><name>rate</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1adcbcda97370024f63dd4d385201f8361" kind="variable"><name>rentRate</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1aa51d75258f40012926c6ebefe9a3192e" kind="variable"><name>lateFee</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1a6b47de0873bd4af01233eabbb92812ff" kind="variable"><name>seats</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1ac52fbab7f695c1fd29553497c7fc3681" kind="variable"><name>rentalRecords</name></member>
+    <member refid="classce204__hw4__library_1_1_car_1af5acdaece86640583c9b9618ffe85414" kind="variable"><name>rentalRecordCount</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library_1_1_car_rental_system" kind="class"><name>ce204_hw4_library::CarRentalSystem</name>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a4dce3ce5cb0db5cfb385b8f493c44f3a" kind="function"><name>loginPage</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a4e5e94ce19093407081fd59bf1175a89" kind="function"><name>run</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1ac951465ffef7c79eeedb08bdbbf6f7ee" kind="function"><name>signIn</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a8095a56c65ccbefe556593b386f00401" kind="function"><name>signUp</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a3b428683358834f83563ac262ecc5fb7" kind="function"><name>add</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a2cafede2783a0ac2d26e5ea8975bc86e" kind="function"><name>rent</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a6e86aa46ffa546e75712c893f2fc9577" kind="function"><name>returnCar</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a1153d46d561a194db376ccc36440c5af" kind="function"><name>vehicleMaintenance</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1ad27b132d7110100ddfae663348025504" kind="function"><name>completeMaintenance</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1adf8a770ad342350f1c9323b6d966f73d" kind="function"><name>getDetails</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1acef3301934416f72c27650a9b6a74244" kind="variable"><name>cars</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a4f35601d8f17e92f3f191e92f34c03e8" kind="variable"><name>vans</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a8c6be002c88e08dc18b4a94976d3ae67" kind="variable"><name>users</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a83fcb932bb36ddc077dbacd23123d116" kind="variable"><name>scanner</name></member>
+    <member refid="classce204__hw4__library_1_1_car_rental_system_1a9a42772cbfaef15642ea215cbf4437cf" kind="variable"><name>format</name></member>
+  </compound>
+  <compound refid="classce204__hw4__app_1_1ce204__hw4__app" kind="class"><name>ce204_hw4_app::ce204_hw4_app</name>
+    <member refid="classce204__hw4__app_1_1ce204__hw4__app_1a46749aef1e87729eb4dab6de8ad7123a" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library_1_1_date_time" kind="class"><name>ce204_hw4_library::DateTime</name>
+    <member refid="classce204__hw4__library_1_1_date_time_1a36364c997512523cb3240365970095ff" kind="function"><name>DateTime</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1aae463fc4e83a96d0907b11a60108f502" kind="function"><name>DateTime</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1ae0e82b73838c80f4c582fe6f047d87ae" kind="function"><name>DateTime</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1ac3a14c9d35e41e749f8534e639a2616b" kind="function"><name>DateTime</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1ae7e5f4f1b5e6123224396d7611952e74" kind="function"><name>getTime</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1a6e343334ff807c1d02f1592cff3fae75" kind="function"><name>getNameOfDay</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1ac2435914de2842fe86ee1eb29e6a796b" kind="function"><name>toString</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1ac915b812f141dd49404e56cfcb6371db" kind="function"><name>getFormattedDate</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1aacdf9d3332576ae4513476d2cc01bd0c" kind="function"><name>getEightDigitDate</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1a5d2fad17cb6bd08792b3c459919c6249" kind="function"><name>setAdvance</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1ad4384cd72552a8717fc048294ac9ea25" kind="function"><name>equals</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1a1bf1444ff511ddb15966cfd922c5656b" kind="function"><name>hashCode</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1abf689ee72b7c887b0ff9c21111a832ff" kind="function"><name>getCurrentTime</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1a42c683a7031d36c0d4d5b84d655b7c55" kind="function"><name>diffDays</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1a278c97d31f0e4598230ad99ff6cb8d1b" kind="function"><name>setDate</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1aa092cd840ccdabf26167d7171c06d374" kind="variable"><name>advance</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1afb480037f38e76b9ba99864aade9a687" kind="variable"><name>time</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1a6ee7c5368e0108e900dbf64e30f71596" kind="variable"><name>day</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1ab482ec790ae5148447e1010e8c1a32d3" kind="variable"><name>month</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1a4e9b2b43de4d2a4be190b013f74a1f64" kind="variable"><name>year</name></member>
+    <member refid="classce204__hw4__library_1_1_date_time_1ad0e58f8292d661b0fdfd1def4e3b4ad5" kind="variable"><name>returnDate</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library_1_1_rental_record" kind="class"><name>ce204_hw4_library::RentalRecord</name>
+    <member refid="classce204__hw4__library_1_1_rental_record_1af693d2b055570c8e13d7b849ef32fb95" kind="function"><name>RentalRecord</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a8eeb7492bf488e04f16857dc0b783d9f" kind="function"><name>setData</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a511df2e2711c83df554aac62345559db" kind="function"><name>getEstimatedReturnDate</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a793d3c9afe2b57feae622afcd72edefd" kind="function"><name>getRentDate</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a5931a0e6b323e0171e8c8a53b8f77fa3" kind="function"><name>getReturnDate</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a162c2bb56986067597e57f036768cda8" kind="function"><name>toString</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a5a065ee6c70a35fa0b44d42e83cc64a0" kind="function"><name>getDetails</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a1cabda0209696c84349b290166f60ef5" kind="variable"><name>RentId</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a2f0d7463d1f26e141ba04e550e043283" kind="variable"><name>RentDate</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a0de9a6b4364ece20bdcc7d5ef4fe7229" kind="variable"><name>returnDate</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1ae239bbe57d29fb8bd949308596d95a6f" kind="variable"><name>EstimatedReturnDate</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1ae7d44c13ffcc39766eccce40a1bb1537" kind="variable"><name>ActualReturnDate</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a345d472ea136fb040b4cd8182aadef31" kind="variable"><name>RentalFee</name></member>
+    <member refid="classce204__hw4__library_1_1_rental_record_1a8105d11d79b7a150f3dbe20f42402ae2" kind="variable"><name>LateFee</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library_1_1_user" kind="class"><name>ce204_hw4_library::User</name>
+    <member refid="classce204__hw4__library_1_1_user_1ae73fed0be65264dd3f06648f62a2f52a" kind="function"><name>User</name></member>
+    <member refid="classce204__hw4__library_1_1_user_1ac5d921427eb6477b4d51e47344f954fb" kind="function"><name>getUsername</name></member>
+    <member refid="classce204__hw4__library_1_1_user_1a8e1511235172236ee7e38ce939f60dae" kind="function"><name>getPassword</name></member>
+    <member refid="classce204__hw4__library_1_1_user_1af3b6f37a71492188899452163f1630d8" kind="variable"><name>username</name></member>
+    <member refid="classce204__hw4__library_1_1_user_1ab322d31acc86809bb3a725c30ade6830" kind="variable"><name>password</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library_1_1_van" kind="class"><name>ce204_hw4_library::Van</name>
+    <member refid="classce204__hw4__library_1_1_van_1a149543bbb395396b65811abd3960a860" kind="function"><name>Van</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a6921a8ca59780a70e42c2e8fe16fd56f" kind="function"><name>getVehicleId</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1ace798d6d8e4f04e08ce6949489bac96e" kind="function"><name>getYear</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a7c1f14731f2953ba0a62ff1c482a9311" kind="function"><name>getMake</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1af956a206c4a271dc665fdc2e5f98f1e1" kind="function"><name>getModel</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a87f8eaea4badbe7109224fcf8e47ee20" kind="function"><name>getStatus</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a94eaac95d934f1041caa1829fbdc6bf6" kind="function"><name>getVehicleType</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a952178c00819f3866373a2c2744a55c3" kind="function"><name>setVehicleStatus</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a70ac1f79fcffeec76a21b650dfc30a7b" kind="function"><name>addRentalRecord</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a52ccf9fa321f92a2f8e472728c391a68" kind="function"><name>getRentalRecords</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1aacf522beea0ccbfb1bbf023deebc9ba5" kind="function"><name>getLateFee</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a0a021645c9edd9ecff298897601f155a" kind="function"><name>returnVehicle</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1ab59cb8edb63b5cab2a2f38a8c0844c90" kind="function"><name>completeMaintenance</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a98cc0a70219af20033fc1553903e3b48" kind="function"><name>toString</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a4764347195c34aac3da2ce3da465bbf0" kind="function"><name>getDetails</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1aab7c6c65c04634df683d4c110d04fd86" kind="variable"><name>rate</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a2949466e7c99109ffb74ab624b37ea10" kind="variable"><name>lateFee</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1ab497c58b4bf0b6e5fa5c0c1e14f7f002" kind="variable"><name>rentalRecords</name></member>
+    <member refid="classce204__hw4__library_1_1_van_1a4566e7d2d0d9deb9b31812b23348f0d1" kind="variable"><name>rentalRecordCount</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library_1_1_vehicle" kind="class"><name>ce204_hw4_library::Vehicle</name>
+    <member refid="classce204__hw4__library_1_1_vehicle_1a0ba0d87115ead5016cc2a8a25f692a92" kind="function"><name>Vehicle</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1abe949825949e841f113ac431584c1052" kind="function"><name>getVehicleId</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1aaf7338b17598d33e58f16e4ce4c63c4e" kind="function"><name>rent</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1adb7f14f2c9c5ed0e7d7fb13ad644c610" kind="function"><name>performMaintenance</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1ada6e30c79ed4fc56ec07616aff0bc8dd" kind="function"><name>toString</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1afdefb381c0bb8527fa55782f0c1534c4" kind="function"><name>getDetails</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1ae0429390ff14bd930a006b8f11a3808a" kind="function"><name>getLastElementIndex</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1ab56a1440858a0a69567099952dd5a826" kind="variable"><name>Vehicle_id</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1afb7fb8aac47377fcdfc366a8c16c00dd" kind="variable"><name>Year</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1a89364eec3bfc33bbc14b70242b9a4825" kind="variable"><name>Make</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1ad4c4460a5aa6836a9621a0607073b25b" kind="variable"><name>Model</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1a1ad95d6ba5aba326524683cd215e72c0" kind="variable"><name>vehicleType</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1ae78ceb61886cd7bdd1caa8f958b57929" kind="variable"><name>vehicleStatus</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_1aefea5ef18b8e3498665847f754bb32e3" kind="variable"><name>records</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library_1_1_vehicle_type" kind="class"><name>ce204_hw4_library::VehicleType</name>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1a4623dd5f0fac07ca619be87d0075777d" kind="function"><name>VehicleType</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1a255925f701677a00e7f19dde7c0cd355" kind="function"><name>VehicleType</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1ad6b322d5d417742c627711c2ea658648" kind="function"><name>getSeats</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1a6320764ec86713c5ec5abe5d0f28cccf" kind="function"><name>getCarSeats</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1a1f9bb003248308fc6d5e0b1dd6aef65c" kind="function"><name>setCarSeats</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1aea5dcf9871277fc0e63bdca8c96f3a65" kind="function"><name>indexOf</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1a32eb8dde5bd2e77b6a182a1fe2a982d6" kind="function"><name>getLastMaintenance</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1aa85899b6603a921a287ca64afc5ac138" kind="function"><name>setLastMaintenance</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1a8b230ebf2b268a48545328ae28f75e28" kind="function"><name>canBeRentedForMinimumDays</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1ad0f421d66ac9fa989abd3d515269d50d" kind="function"><name>IsUnderMaintenance</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1aeb9ba36c1530ab5a13295999c13e7c68" kind="variable"><name>carSeats</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1a3c788fb5e5fd98bb3382d3d574595047" kind="variable"><name>vanSeats</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1a1b52b6b3f8dc42155a89636300c08035" kind="variable"><name>LastMaintenance</name></member>
+    <member refid="classce204__hw4__library_1_1_vehicle_type_1afc9e514496405c5e45e6035a304f5058" kind="variable"><name>days</name></member>
+  </compound>
+  <compound refid="namespacece204__hw4__app" kind="namespace"><name>ce204_hw4_app</name>
+  </compound>
+  <compound refid="namespacece204__hw4__library" kind="namespace"><name>ce204_hw4_library</name>
+  </compound>
+  <compound refid="namespacejava_1_1util" kind="namespace"><name>java::util</name>
+  </compound>
+  <compound refid="ce204__hw4__app_8java" kind="file"><name>ce204_hw4_app.java</name>
+  </compound>
+  <compound refid="_car_8java" kind="file"><name>Car.java</name>
+  </compound>
+  <compound refid="_car_rental_system_8java" kind="file"><name>CarRentalSystem.java</name>
+  </compound>
+  <compound refid="_date_time_8java" kind="file"><name>DateTime.java</name>
+  </compound>
+  <compound refid="_rental_record_8java" kind="file"><name>RentalRecord.java</name>
+  </compound>
+  <compound refid="_user_8java" kind="file"><name>User.java</name>
+  </compound>
+  <compound refid="_van_8java" kind="file"><name>Van.java</name>
+  </compound>
+  <compound refid="_vehicle_8java" kind="file"><name>Vehicle.java</name>
+  </compound>
+  <compound refid="_vehicle_type_8java" kind="file"><name>VehicleType.java</name>
+  </compound>
+  <compound refid="dir_cb1b6a87b6929dae7f978163507bbf53" kind="dir"><name>ce204-hw4</name>
+  </compound>
+  <compound refid="dir_0f82eefea86880d06eeb50fd926591f2" kind="dir"><name>ce204-hw4/src/main/java/ce204_hw4_app</name>
+  </compound>
+  <compound refid="dir_9bcb43ba70f503797f8717188cbf42ea" kind="dir"><name>ce204-hw4/src/main/java/ce204_hw4_library</name>
+  </compound>
+  <compound refid="dir_2c01955520d01da46a4fe23c24b6980a" kind="dir"><name>ce204-hw4/src/main/java</name>
+  </compound>
+  <compound refid="dir_3cea23a4409f375f4bd3a903cd33913e" kind="dir"><name>ce204-hw4/src/main</name>
+  </compound>
+  <compound refid="dir_9155b33c8e191f41b940a86931c3aa76" kind="dir"><name>ce204-hw4/src</name>
+  </compound>
+</doxygenindex>

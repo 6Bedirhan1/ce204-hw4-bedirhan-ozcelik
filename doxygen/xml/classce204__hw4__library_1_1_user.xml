@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library_1_1_user" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library::User</compoundname>
+      <sectiondef kind="user-defined">
+      <header>User</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>String</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>String</bold>] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_user_1ae73fed0be65264dd3f06648f62a2f52a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_library.User.User</definition>
+        <argsstring>(String username, String password)</argsstring>
+        <name>User</name>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/User.java" line="13" column="10" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/User.java" bodystart="13" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getUsername</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_user_1ac5d921427eb6477b4d51e47344f954fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.User.getUsername</definition>
+        <argsstring>()</argsstring>
+        <name>getUsername</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/User.java" line="22" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/User.java" bodystart="22" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getPassword</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_user_1a8e1511235172236ee7e38ce939f60dae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.User.getPassword</definition>
+        <argsstring>()</argsstring>
+        <name>getPassword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/User.java" line="30" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/User.java" bodystart="30" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_user_1af3b6f37a71492188899452163f1630d8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_library.User.username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/User.java" line="4" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/User.java" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_user_1ab322d31acc86809bb3a725c30ade6830" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_library.User.password</definition>
+        <argsstring></argsstring>
+        <name>password</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/User.java" line="5" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/User.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library/User.java" line="3" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/User.java" bodystart="3" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library_1_1_user_1a8e1511235172236ee7e38ce939f60dae" prot="public" virt="non-virtual"><scope>ce204_hw4_library::User</scope><name>getPassword</name></member>
+      <member refid="classce204__hw4__library_1_1_user_1ac5d921427eb6477b4d51e47344f954fb" prot="public" virt="non-virtual"><scope>ce204_hw4_library::User</scope><name>getUsername</name></member>
+      <member refid="classce204__hw4__library_1_1_user_1ab322d31acc86809bb3a725c30ade6830" prot="private" virt="non-virtual"><scope>ce204_hw4_library::User</scope><name>password</name></member>
+      <member refid="classce204__hw4__library_1_1_user_1ae73fed0be65264dd3f06648f62a2f52a" prot="public" virt="non-virtual"><scope>ce204_hw4_library::User</scope><name>User</name></member>
+      <member refid="classce204__hw4__library_1_1_user_1af3b6f37a71492188899452163f1630d8" prot="private" virt="non-virtual"><scope>ce204_hw4_library::User</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

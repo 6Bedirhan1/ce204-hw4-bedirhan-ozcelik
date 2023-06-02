@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library_1_1_rental_record" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library::RentalRecord</compoundname>
+    <basecompoundref refid="classce204__hw4__library_1_1_date_time" prot="public" virt="non-virtual">ce204_hw4_library.DateTime</basecompoundref>
+      <sectiondef kind="user-defined">
+      <header>RentalRecord</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">RentId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>String</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Rentdate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">EstimatedReturnDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></bold>] The use of car rental management system can standardize the management and operation of enterprises </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_rental_record_1af693d2b055570c8e13d7b849ef32fb95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_library.RentalRecord.RentalRecord</definition>
+        <argsstring>(String RentId, DateTime Rentdate, DateTime EstimatedReturnDate)</argsstring>
+        <name>RentalRecord</name>
+        <param>
+          <type>String</type>
+          <declname>RentId</declname>
+        </param>
+        <param>
+          <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+          <declname>Rentdate</declname>
+        </param>
+        <param>
+          <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+          <declname>EstimatedReturnDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="18" column="10" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="18" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>setData</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ActualDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">RentalFee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>Double</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">LateFee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>Double</bold>] <ref refid="classce204__hw4__library_1_1_car" kindref="compound">Car</ref> rental management system is a simple and easy-to-use system for car rental companies </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_rental_record_1a8eeb7492bf488e04f16857dc0b783d9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.RentalRecord.setData</definition>
+        <argsstring>(DateTime ActualDate, Double RentalFee, Double LateFee)</argsstring>
+        <name>setData</name>
+        <param>
+          <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+          <declname>ActualDate</declname>
+        </param>
+        <param>
+          <type>Double</type>
+          <declname>RentalFee</declname>
+        </param>
+        <param>
+          <type>Double</type>
+          <declname>LateFee</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="30" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="30" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getEstimatedReturnDate</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_rental_record_1a511df2e2711c83df554aac62345559db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime ce204_hw4_library.RentalRecord.getEstimatedReturnDate</definition>
+        <argsstring>()</argsstring>
+        <name>getEstimatedReturnDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="40" column="19" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="40" bodyend="42"/>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a7fc22bfdeb785cb4db9dd0279959dcdf" compoundref="_car_8java" startline="119" endline="143">ce204_hw4_library.Car.returnVehicle</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a0a021645c9edd9ecff298897601f155a" compoundref="_van_8java" startline="121" endline="145">ce204_hw4_library.Van.returnVehicle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getRentDate</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_rental_record_1a793d3c9afe2b57feae622afcd72edefd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime ce204_hw4_library.RentalRecord.getRentDate</definition>
+        <argsstring>()</argsstring>
+        <name>getRentDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="48" column="19" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="48" bodyend="50"/>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a7fc22bfdeb785cb4db9dd0279959dcdf" compoundref="_car_8java" startline="119" endline="143">ce204_hw4_library.Car.returnVehicle</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a0a021645c9edd9ecff298897601f155a" compoundref="_van_8java" startline="121" endline="145">ce204_hw4_library.Van.returnVehicle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getReturnDate</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_rental_record_1a5931a0e6b323e0171e8c8a53b8f77fa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime ce204_hw4_library.RentalRecord.getReturnDate</definition>
+        <argsstring>()</argsstring>
+        <name>getReturnDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="56" column="19" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="56" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>toString</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_rental_record_1a162c2bb56986067597e57f036768cda8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.RentalRecord.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classce204__hw4__library_1_1_date_time_1ac2435914de2842fe86ee1eb29e6a796b">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="64" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="64" bodyend="71"/>
+        <references refid="classce204__hw4__library_1_1_date_time_1ac2435914de2842fe86ee1eb29e6a796b" compoundref="_date_time_8java" startline="74" endline="76">ce204_hw4_library.DateTime.toString</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getDetails</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_rental_record_1a5a065ee6c70a35fa0b44d42e83cc64a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.RentalRecord.getDetails</definition>
+        <argsstring>()</argsstring>
+        <name>getDetails</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="77" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="77" bodyend="87"/>
+        <references refid="classce204__hw4__library_1_1_date_time_1ac2435914de2842fe86ee1eb29e6a796b" compoundref="_date_time_8java" startline="74" endline="76">ce204_hw4_library.DateTime.toString</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_rental_record_1a1cabda0209696c84349b290166f60ef5" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_library.RentalRecord.RentId</definition>
+        <argsstring></argsstring>
+        <name>RentId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="4" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_rental_record_1a2f0d7463d1f26e141ba04e550e043283" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime ce204_hw4_library.RentalRecord.RentDate</definition>
+        <argsstring></argsstring>
+        <name>RentDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="5" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_rental_record_1a0de9a6b4364ece20bdcc7d5ef4fe7229" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime ce204_hw4_library.RentalRecord.returnDate</definition>
+        <argsstring></argsstring>
+        <name>returnDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="6" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_rental_record_1ae239bbe57d29fb8bd949308596d95a6f" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime ce204_hw4_library.RentalRecord.EstimatedReturnDate</definition>
+        <argsstring></argsstring>
+        <name>EstimatedReturnDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="7" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_rental_record_1ae7d44c13ffcc39766eccce40a1bb1537" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime ce204_hw4_library.RentalRecord.ActualReturnDate</definition>
+        <argsstring></argsstring>
+        <name>ActualReturnDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="8" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_rental_record_1a345d472ea136fb040b4cd8182aadef31" prot="private" static="no" mutable="no">
+        <type>Double</type>
+        <definition>Double ce204_hw4_library.RentalRecord.RentalFee</definition>
+        <argsstring></argsstring>
+        <name>RentalFee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="9" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_rental_record_1a8105d11d79b7a150f3dbe20f42402ae2" prot="private" static="no" mutable="no">
+        <type>Double</type>
+        <definition>Double ce204_hw4_library.RentalRecord.LateFee</definition>
+        <argsstring></argsstring>
+        <name>LateFee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="10" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_library.RentalRecord</label>
+        <link refid="classce204__hw4__library_1_1_rental_record"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library.DateTime</label>
+        <link refid="classce204__hw4__library_1_1_date_time"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ce204_hw4_library.RentalRecord</label>
+        <link refid="classce204__hw4__library_1_1_rental_record"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library.DateTime</label>
+        <link refid="classce204__hw4__library_1_1_date_time"/>
+      </node>
+    </collaborationgraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" line="3" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/RentalRecord.java" bodystart="3" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library_1_1_rental_record_1ae7d44c13ffcc39766eccce40a1bb1537" prot="private" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>ActualReturnDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a36364c997512523cb3240365970095ff" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>DateTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1aae463fc4e83a96d0907b11a60108f502" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>DateTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ae0e82b73838c80f4c582fe6f047d87ae" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>DateTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ac3a14c9d35e41e749f8534e639a2616b" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>DateTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a42c683a7031d36c0d4d5b84d655b7c55" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>diffDays</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ad4384cd72552a8717fc048294ac9ea25" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>equals</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1ae239bbe57d29fb8bd949308596d95a6f" prot="private" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>EstimatedReturnDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1abf689ee72b7c887b0ff9c21111a832ff" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>getCurrentTime</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a5a065ee6c70a35fa0b44d42e83cc64a0" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>getDetails</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1aacdf9d3332576ae4513476d2cc01bd0c" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>getEightDigitDate</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a511df2e2711c83df554aac62345559db" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>getEstimatedReturnDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ac915b812f141dd49404e56cfcb6371db" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>getFormattedDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a6e343334ff807c1d02f1592cff3fae75" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>getNameOfDay</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a793d3c9afe2b57feae622afcd72edefd" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>getRentDate</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a5931a0e6b323e0171e8c8a53b8f77fa3" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>getReturnDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1ae7e5f4f1b5e6123224396d7611952e74" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>getTime</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a1bf1444ff511ddb15966cfd922c5656b" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>hashCode</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a8105d11d79b7a150f3dbe20f42402ae2" prot="private" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>LateFee</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a345d472ea136fb040b4cd8182aadef31" prot="private" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>RentalFee</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1af693d2b055570c8e13d7b849ef32fb95" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>RentalRecord</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a2f0d7463d1f26e141ba04e550e043283" prot="private" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>RentDate</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a1cabda0209696c84349b290166f60ef5" prot="private" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>RentId</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a0de9a6b4364ece20bdcc7d5ef4fe7229" prot="private" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>returnDate</name></member>
+      <member refid="classce204__hw4__library_1_1_date_time_1a5d2fad17cb6bd08792b3c459919c6249" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>setAdvance</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a8eeb7492bf488e04f16857dc0b783d9f" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>setData</name></member>
+      <member refid="classce204__hw4__library_1_1_rental_record_1a162c2bb56986067597e57f036768cda8" prot="public" virt="non-virtual"><scope>ce204_hw4_library::RentalRecord</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

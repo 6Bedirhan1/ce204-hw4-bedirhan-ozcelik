@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library_1_1_car_rental_system" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library::CarRentalSystem</compoundname>
+      <sectiondef kind="user-defined">
+      <header>loginPage</header>
+      <description><para>This the main class used to get details from the user and display the menu driven options This class acts as the businedd layer in our applications </para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1a4dce3ce5cb0db5cfb385b8f493c44f3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.CarRentalSystem.loginPage</definition>
+        <argsstring>()</argsstring>
+        <name>loginPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="24" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="24" bodyend="52"/>
+        <references refid="classce204__hw4__library_1_1_car_rental_system_1a4e5e94ce19093407081fd59bf1175a89" compoundref="_car_rental_system_8java" startline="106" endline="160">ce204_hw4_library.CarRentalSystem.run</references>
+        <referencedby refid="classce204__hw4__app_1_1ce204__hw4__app_1a46749aef1e87729eb4dab6de8ad7123a" compoundref="ce204__hw4__app_8java" startline="15" endline="19">ce204_hw4_app.ce204_hw4_app.main</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_rental_system_1a4e5e94ce19093407081fd59bf1175a89" compoundref="_car_rental_system_8java" startline="106" endline="160">ce204_hw4_library.CarRentalSystem.run</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>run</header>
+      <description><para>This the method called from main method this contains the menudriven interface to communicate with the user </para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1a4e5e94ce19093407081fd59bf1175a89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.CarRentalSystem.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="106" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="106" bodyend="160"/>
+        <references refid="classce204__hw4__library_1_1_car_rental_system_1a4dce3ce5cb0db5cfb385b8f493c44f3a" compoundref="_car_rental_system_8java" startline="24" endline="52">ce204_hw4_library.CarRentalSystem.loginPage</references>
+        <referencedby refid="classce204__hw4__library_1_1_car_rental_system_1a4dce3ce5cb0db5cfb385b8f493c44f3a" compoundref="_car_rental_system_8java" startline="24" endline="52">ce204_hw4_library.CarRentalSystem.loginPage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>signIn</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1ac951465ffef7c79eeedb08bdbbf6f7ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ce204_hw4_library.CarRentalSystem.signIn</definition>
+        <argsstring>()</argsstring>
+        <name>signIn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="58" column="19" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="58" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>signUp</header>
+      <description><para>used to sign up </para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1a8095a56c65ccbefe556593b386f00401" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.CarRentalSystem.signUp</definition>
+        <argsstring>()</argsstring>
+        <name>signUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="79" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="79" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>add</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">scan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>Scanner</bold>] Used to add either cars or vans to the list </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1a3b428683358834f83563ac262ecc5fb7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.CarRentalSystem.add</definition>
+        <argsstring>(Scanner scan)</argsstring>
+        <name>add</name>
+        <param>
+          <type>Scanner</type>
+          <declname>scan</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="167" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="167" bodyend="259"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rent</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>Scanner</bold>] Used to rent either available car or available van </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1a2cafede2783a0ac2d26e5ea8975bc86e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.CarRentalSystem.rent</definition>
+        <argsstring>(Scanner sc)</argsstring>
+        <name>rent</name>
+        <param>
+          <type>Scanner</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="267" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="267" bodyend="376"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>returnCar</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>Scanner</bold>] Used to return a rented car or van </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1a6e86aa46ffa546e75712c893f2fc9577" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.CarRentalSystem.returnCar</definition>
+        <argsstring>(Scanner sc)</argsstring>
+        <name>returnCar</name>
+        <param>
+          <type>Scanner</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="383" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="383" bodyend="452"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>vehicleMaintenance</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>Scanner</bold>] Method used to set either car or van to maintenance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1a1153d46d561a194db376ccc36440c5af" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.CarRentalSystem.vehicleMaintenance</definition>
+        <argsstring>(Scanner sc)</argsstring>
+        <name>vehicleMaintenance</name>
+        <param>
+          <type>Scanner</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="460" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="460" bodyend="519"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>completeMaintenance</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>Scanner</bold>] Method used to complete maintenance of either car or van </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1ad27b132d7110100ddfae663348025504" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.CarRentalSystem.completeMaintenance</definition>
+        <argsstring>(Scanner sc)</argsstring>
+        <name>completeMaintenance</name>
+        <param>
+          <type>Scanner</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="526" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="526" bodyend="595"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getDetails</header>
+      <description><para>Method used to get details of car or van with their rental history </para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_car_rental_system_1adf8a770ad342350f1c9323b6d966f73d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library.CarRentalSystem.getDetails</definition>
+        <argsstring>()</argsstring>
+        <name>getDetails</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="601" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="601" bodyend="620"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_car_rental_system_1acef3301934416f72c27650a9b6a74244" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library_1_1_car" kindref="compound">Car</ref></type>
+        <definition>Car ce204_hw4_library.CarRentalSystem.cars[]</definition>
+        <argsstring>[]</argsstring>
+        <name>cars</name>
+        <initializer>= new <ref refid="classce204__hw4__library_1_1_car" kindref="compound">Car</ref>[50]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="13" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_car_rental_system_1a4f35601d8f17e92f3f191e92f34c03e8" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library_1_1_van" kindref="compound">Van</ref></type>
+        <definition>Van ce204_hw4_library.CarRentalSystem.vans[]</definition>
+        <argsstring>[]</argsstring>
+        <name>vans</name>
+        <initializer>= new <ref refid="classce204__hw4__library_1_1_van" kindref="compound">Van</ref>[50]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="14" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_car_rental_system_1a8c6be002c88e08dc18b4a94976d3ae67" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classce204__hw4__library_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>List&lt;User&gt; ce204_hw4_library.CarRentalSystem.users</definition>
+        <argsstring></argsstring>
+        <name>users</name>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="16" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_car_rental_system_1a83fcb932bb36ddc077dbacd23123d116" prot="private" static="yes" mutable="no">
+        <type>Scanner</type>
+        <definition>Scanner ce204_hw4_library.CarRentalSystem.scanner</definition>
+        <argsstring></argsstring>
+        <name>scanner</name>
+        <initializer>= new Scanner(System.in)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="15" column="26" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_car_rental_system_1a9a42772cbfaef15642ea215cbf4437cf" prot="public" static="yes" mutable="no">
+        <type>DateFormat</type>
+        <definition>DateFormat ce204_hw4_library.CarRentalSystem.format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <initializer>= new SimpleDateFormat(&quot;dd/MM/yyyy&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="18" column="28" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ce204_hw4_library.CarRentalSystem</label>
+        <link refid="classce204__hw4__library_1_1_car_rental_system"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>format</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DateFormat</label>
+      </node>
+    </collaborationgraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" line="11" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/CarRentalSystem.java" bodystart="11" bodyend="621"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a3b428683358834f83563ac262ecc5fb7" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>add</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1acef3301934416f72c27650a9b6a74244" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>cars</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1ad27b132d7110100ddfae663348025504" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>completeMaintenance</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a9a42772cbfaef15642ea215cbf4437cf" prot="public" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>format</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1adf8a770ad342350f1c9323b6d966f73d" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>getDetails</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a4dce3ce5cb0db5cfb385b8f493c44f3a" prot="public" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>loginPage</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a2cafede2783a0ac2d26e5ea8975bc86e" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>rent</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a6e86aa46ffa546e75712c893f2fc9577" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>returnCar</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a4e5e94ce19093407081fd59bf1175a89" prot="public" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>run</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a83fcb932bb36ddc077dbacd23123d116" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>scanner</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1ac951465ffef7c79eeedb08bdbbf6f7ee" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>signIn</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a8095a56c65ccbefe556593b386f00401" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>signUp</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a8c6be002c88e08dc18b4a94976d3ae67" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>users</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a4f35601d8f17e92f3f191e92f34c03e8" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>vans</name></member>
+      <member refid="classce204__hw4__library_1_1_car_rental_system_1a1153d46d561a194db376ccc36440c5af" prot="private" virt="non-virtual"><scope>ce204_hw4_library::CarRentalSystem</scope><name>vehicleMaintenance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

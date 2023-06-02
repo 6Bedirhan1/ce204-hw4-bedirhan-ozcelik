@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CarRentalSystem.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204-hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_library</a> &gt; <span class="el_source">CarRentalSystem.java</span></div><h1>CarRentalSystem.java</h1><pre class="source lang-java linenums">package ce204_hw4_library;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
+
+<span class="nc" id="L11">public class  CarRentalSystem {</span>
+  //cars and vans are two collections used to store cars of type Cars and vans of type Vans respectively
+<span class="nc" id="L13">  private Car cars[] = new Car[50];</span>
+<span class="nc" id="L14">  private Van vans[] = new Van[50];</span>
+<span class="nc" id="L15">  private static Scanner scanner = new Scanner(System.in);</span>
+<span class="nc" id="L16">  private List&lt;User&gt; users = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L18">  public static DateFormat format = new SimpleDateFormat(&quot;dd/MM/yyyy&quot;); //Basic format expected from the User</span>
+  /**
+   * @name loginPage
+   * This the main class used to get details from the user and display the menu driven options
+   * This class acts as the businedd layer in our applications
+   **/
+  public void loginPage() {
+<span class="nc" id="L25">    System.out.println(&quot;--------WELCOME---------&quot;);</span>
+<span class="nc" id="L26">    System.out.println(&quot;Press 1 for Sign In&quot;);</span>
+<span class="nc" id="L27">    System.out.println(&quot;Press 2 for Sign Up&quot;);</span>
+<span class="nc" id="L28">    System.out.print(&quot;--&gt; &quot;);</span>
+<span class="nc" id="L29">    int choice = scanner.nextInt();</span>
+<span class="nc" id="L30">    scanner.nextLine(); // Consume the newline character</span>
+
+<span class="nc bnc" id="L32" title="All 3 branches missed.">    switch (choice) {</span>
+      case 1:
+<span class="nc bnc" id="L34" title="All 2 branches missed.">        if (signIn()) {</span>
+<span class="nc" id="L35">          run();</span>
+        } else {
+<span class="nc" id="L37">          loginPage();</span>
+        }
+
+<span class="nc" id="L40">        break;</span>
+
+      case 2:
+<span class="nc" id="L43">        signUp();</span>
+<span class="nc" id="L44">        loginPage();</span>
+<span class="nc" id="L45">        break;</span>
+
+      default:
+<span class="nc" id="L48">        System.out.println(&quot;Invalid choice. Please try again.&quot;);</span>
+<span class="nc" id="L49">        loginPage();</span>
+        break;
+    }
+<span class="nc" id="L52">  }</span>
+  /**
+   * @name signIn
+   * @retval [\b boolean]
+   * Used to sign
+   **/
+  private boolean signIn() {
+<span class="nc" id="L59">    System.out.print(&quot;Enter Username: &quot;);</span>
+<span class="nc" id="L60">    String username = scanner.nextLine();</span>
+<span class="nc" id="L61">    System.out.print(&quot;Enter Password: &quot;);</span>
+<span class="nc" id="L62">    String password = scanner.nextLine();</span>
+
+    // Check username and password (dummy implementation)
+<span class="nc bnc" id="L65" title="All 2 branches missed.">    for (User user : users) {</span>
+<span class="nc bnc" id="L66" title="All 4 branches missed.">      if (user.getUsername().equals(username) &amp;&amp; user.getPassword().equals(password)) {</span>
+<span class="nc" id="L67">        System.out.println(&quot;Sign in successful!&quot;);</span>
+<span class="nc" id="L68">        return true;</span>
+      }
+<span class="nc" id="L70">    }</span>
+
+<span class="nc" id="L72">    System.out.println(&quot;Invalid username or password. Please try again.&quot;);</span>
+<span class="nc" id="L73">    return false;</span>
+  }
+  /**
+   * @name signUp
+   * used to sign up
+   **/
+  private void signUp() {
+<span class="nc" id="L80">    System.out.println(&quot;Sign Up&quot;);</span>
+<span class="nc" id="L81">    System.out.print(&quot;Enter Username: &quot;);</span>
+<span class="nc" id="L82">    String username = scanner.nextLine();</span>
+
+    // Check if the username already exists
+<span class="nc bnc" id="L85" title="All 2 branches missed.">    for (User user : users) {</span>
+<span class="nc bnc" id="L86" title="All 2 branches missed.">      if (user.getUsername().equals(username)) {</span>
+<span class="nc" id="L87">        System.out.println(&quot;Username already exists. Please choose a different username.&quot;);</span>
+<span class="nc" id="L88">        signUp();</span>
+<span class="nc" id="L89">        return;</span>
+      }
+<span class="nc" id="L91">    }</span>
+
+<span class="nc" id="L93">    System.out.print(&quot;Enter Password: &quot;);</span>
+<span class="nc" id="L94">    String password = scanner.nextLine();</span>
+    // Create a new user and add it to the list
+<span class="nc" id="L96">    User newUser = new User(username, password);</span>
+<span class="nc" id="L97">    users.add(newUser);</span>
+<span class="nc" id="L98">    System.out.println(&quot;Sign up successful!&quot;);</span>
+<span class="nc" id="L99">  }</span>
+
+  /**
+  * @name run
+  * This the method called from main method
+  * this contains the menudriven interface to communicate with the user
+  **/
+  public void run() {
+    while (true) {
+<span class="nc" id="L108">      System.out.println(&quot;\n**** CAR-RENT SYSTEM MENU ****\n&quot;);</span>
+<span class="nc" id="L109">      System.out.println(&quot;Add vehicle:            1&quot;);</span>
+<span class="nc" id="L110">      System.out.println(&quot;Rent vehicle:           2&quot;);</span>
+<span class="nc" id="L111">      System.out.println(&quot;Return vehicle:         3&quot;);</span>
+<span class="nc" id="L112">      System.out.println(&quot;Vehicle Maintenance:    4&quot;);</span>
+<span class="nc" id="L113">      System.out.println(&quot;Complete Maintenance:   5&quot;);</span>
+<span class="nc" id="L114">      System.out.println(&quot;Display All Vehicles:   6&quot;);</span>
+<span class="nc" id="L115">      System.out.println(&quot;Log Out:                7&quot;);</span>
+<span class="nc" id="L116">      System.out.println(&quot;Exit Program:           8&quot;);</span>
+<span class="nc" id="L117">      System.out.print(&quot;Enter your choice: &quot;);</span>
+<span class="nc" id="L118">      Scanner sc= new Scanner(System.in);</span>
+<span class="nc" id="L119">      int choice = sc.nextInt();</span>
+<span class="nc" id="L120">      sc.nextLine();</span>
+
+<span class="nc bnc" id="L122" title="All 9 branches missed.">      switch (choice) {</span>
+        case 1:
+<span class="nc" id="L124">          this.add(sc); //Method used to add either cars or vans</span>
+<span class="nc" id="L125">          break;</span>
+
+        case 2:
+<span class="nc" id="L128">          this.rent(sc); //Method used to rent either cars or vans</span>
+<span class="nc" id="L129">          break;</span>
+
+        case 3:
+<span class="nc" id="L132">          this.returnCar(sc); //Method used to return a car after being rented</span>
+<span class="nc" id="L133">          break;</span>
+
+        case 4:
+<span class="nc" id="L136">          this.vehicleMaintenance(sc); //Method used to set either car or van to maintenance</span>
+<span class="nc" id="L137">          break;</span>
+
+        case 5:
+<span class="nc" id="L140">          this.completeMaintenance(sc);  //Method used to complete the maintenance</span>
+<span class="nc" id="L141">          break;</span>
+
+        case 6:
+<span class="nc" id="L144">          this.getDetails();  //Method used to get the details of cars or vans if present</span>
+<span class="nc" id="L145">          break;</span>
+
+        case 7:
+<span class="nc" id="L148">          loginPage();</span>
+<span class="nc" id="L149">          return;</span>
+
+        case 8:
+<span class="nc" id="L152">          sc.close(); //Closing the scanner if 7 is selected by the user</span>
+<span class="nc" id="L153">          return;</span>
+
+        default:
+<span class="nc" id="L156">          System.out.println(&quot;Please try again.&quot;);</span>
+          break;
+      }
+<span class="nc" id="L159">    }</span>
+  }
+
+  /**
+  * @name add
+  * @param [in] scan [\b Scanner]
+  * Used to add either cars or vans to the list
+  **/
+  private void add(Scanner scan) {
+<span class="nc" id="L168">    int i=0;</span>
+<span class="nc" id="L169">    String vehicleID=&quot;&quot;;</span>
+<span class="nc" id="L170">    int seats=0;</span>
+<span class="nc" id="L171">    String maintenanceDate=null;</span>
+<span class="nc" id="L172">    System.out.print(&quot;Vehicle Type(Van or Car): &quot;);</span>
+<span class="nc" id="L173">    String vehicleType = scan.nextLine();</span>
+
+<span class="nc bnc" id="L175" title="All 4 branches missed.">    while (!(vehicleType.equalsIgnoreCase(&quot;car&quot;) ||vehicleType.equalsIgnoreCase(&quot;van&quot;))) {</span>
+<span class="nc" id="L176">      System.out.print(&quot;Please enter either van or car: &quot;);</span>
+<span class="nc" id="L177">      vehicleType = scan.nextLine();</span>
+    }
+
+<span class="nc" id="L180">    System.out.print(&quot;Year: &quot;);</span>
+<span class="nc" id="L181">    int year = Integer.parseInt(scan.nextLine());</span>
+
+<span class="nc bnc" id="L183" title="All 4 branches missed.">    while (year&lt;0 || year &gt;3000) {</span>
+<span class="nc" id="L184">      System.out.println(&quot;Please enter a valid year&quot;);</span>
+<span class="nc" id="L185">      year=Integer.parseInt(scan.nextLine());</span>
+    }
+
+<span class="nc" id="L188">    System.out.print(&quot;Car Name: &quot;);</span>
+<span class="nc" id="L189">    String make = scan.nextLine();</span>
+<span class="nc" id="L190">    System.out.print(&quot;Model Name: &quot;);</span>
+<span class="nc" id="L191">    String model = scan.nextLine();</span>
+
+<span class="nc bnc" id="L193" title="All 4 branches missed.">    if(vehicleType.equals(&quot;car&quot;)|| vehicleType.equals(&quot;Car&quot;)) {</span>
+<span class="nc" id="L194">      System.out.print(&quot;Vehicle ID: C_&quot;);</span>
+<span class="nc" id="L195">      vehicleID = scan.nextLine();</span>
+<span class="nc" id="L196">      vehicleID=&quot;C_&quot;+vehicleID;</span>
+
+<span class="nc bnc" id="L198" title="All 4 branches missed.">      if(this.vans[0]!=null &amp;&amp; vehicleID.contains(&quot;C_&quot;)) {</span>
+<span class="nc bnc" id="L199" title="All 2 branches missed.">        for(i=0; this.vans[i]!=null; i++) {</span>
+<span class="nc bnc" id="L200" title="All 2 branches missed.">          if ((this.vans[i].getVehicleId()).equals(vehicleID)) {</span>
+<span class="nc" id="L201">            System.out.println(&quot;ID Already used, Please add a new vehicle&quot;);</span>
+<span class="nc" id="L202">            return;</span>
+          }
+        }
+      }
+
+<span class="nc" id="L207">      System.out.print(&quot;Last Maintenance (dd/mm/yyyy): &quot;);</span>
+<span class="nc" id="L208">      maintenanceDate = scan.next();</span>
+<span class="nc" id="L209">      format.setLenient(false);</span>
+
+<span class="nc bnc" id="L211" title="All 2 branches missed.">      while(maintenanceDate.trim().length() != ((SimpleDateFormat) format).toPattern().length()) {</span>
+<span class="nc" id="L212">        System.out.println(&quot;Please enter a valid date in the format dd/mm/yyyy: &quot;);</span>
+<span class="nc" id="L213">        maintenanceDate = scan.nextLine();</span>
+      }
+
+<span class="nc" id="L216">      String dateSplit[] = maintenanceDate.split(&quot;/&quot;);</span>
+<span class="nc" id="L217">      DateTime Lastmain= new DateTime(Integer.parseInt(dateSplit[0]),Integer.parseInt(dateSplit[1]),Integer.parseInt(dateSplit[2]));</span>
+
+<span class="nc bnc" id="L219" title="All 2 branches missed.">      if(i&lt;50) {</span>
+<span class="nc" id="L220">        Vehicle newVehicle= new Van(vehicleID,year,make,model,0,new VehicleType(seats,Lastmain));</span>
+<span class="nc" id="L221">        this.vans[i]= (Van) newVehicle;</span>
+<span class="nc" id="L222">        System.out.println(newVehicle.toString());</span>
+      }
+    }
+
+<span class="nc bnc" id="L226" title="All 4 branches missed.">    if(vehicleType.equalsIgnoreCase(&quot;van&quot;)|| vehicleType.equals(&quot;Van&quot;) ) {</span>
+<span class="nc" id="L227">      System.out.print(&quot;Vehicle ID: V_&quot;);</span>
+<span class="nc" id="L228">      vehicleID = scan.nextLine();</span>
+<span class="nc" id="L229">      vehicleID=&quot;V_&quot;+vehicleID;</span>
+
+<span class="nc bnc" id="L231" title="All 4 branches missed.">      if(this.vans[0]!=null &amp;&amp; vehicleID.contains(&quot;V_&quot;)) {</span>
+<span class="nc bnc" id="L232" title="All 2 branches missed.">        for(i=0; this.vans[i]!=null; i++) {</span>
+<span class="nc bnc" id="L233" title="All 2 branches missed.">          if ((this.vans[i].getVehicleId()).equals(vehicleID)) {</span>
+<span class="nc" id="L234">            System.out.println(&quot;ID Already used, Please add a new vehicle&quot;);</span>
+<span class="nc" id="L235">            return;</span>
+          }
+        }
+      }
+
+<span class="nc" id="L240">      seats = 15;</span>
+<span class="nc" id="L241">      System.out.print(&quot;Last Maintenance (dd/mm/yyyy): &quot;);</span>
+<span class="nc" id="L242">      maintenanceDate = scan.next();</span>
+<span class="nc" id="L243">      format.setLenient(false);</span>
+
+<span class="nc bnc" id="L245" title="All 2 branches missed.">      while(maintenanceDate.trim().length() != ((SimpleDateFormat) format).toPattern().length()) {</span>
+<span class="nc" id="L246">        System.out.println(&quot;Please enter a valid date in the format dd/mm/yyyy: &quot;);</span>
+<span class="nc" id="L247">        maintenanceDate = scan.nextLine();</span>
+      }
+
+<span class="nc" id="L250">      String dateSplit[] = maintenanceDate.split(&quot;/&quot;);</span>
+<span class="nc" id="L251">      DateTime Lastmain= new DateTime(Integer.parseInt(dateSplit[0]),Integer.parseInt(dateSplit[1]),Integer.parseInt(dateSplit[2]));</span>
+
+<span class="nc bnc" id="L253" title="All 2 branches missed.">      if(i&lt;50) {</span>
+<span class="nc" id="L254">        Vehicle newVehicle= new Van(vehicleID,year,make,model,0,new VehicleType(seats,Lastmain));</span>
+<span class="nc" id="L255">        this.vans[i]= (Van) newVehicle;</span>
+<span class="nc" id="L256">        System.out.println(newVehicle.toString());</span>
+      }
+    }
+<span class="nc" id="L259">  }</span>
+
+
+  /**
+  * @name rent
+   * @param [in] sc [\b Scanner]
+  * Used to rent either available car or available van
+  **/
+  private void rent(Scanner sc) {
+<span class="nc" id="L268">    System.out.print(&quot;Vehicle id: &quot;);</span>
+<span class="nc" id="L269">    String id = sc.nextLine();</span>
+<span class="nc" id="L270">    String type=&quot;&quot;;</span>
+
+<span class="nc bnc" id="L272" title="All 4 branches missed.">    if(id.contains(&quot;C_&quot;) &amp;&amp; this.vans[0]==null) {</span>
+<span class="nc" id="L273">      System.out.println(&quot;There are no cars currently at the moment.&quot;);</span>
+<span class="nc" id="L274">      return;</span>
+    }
+
+<span class="nc bnc" id="L277" title="All 4 branches missed.">    if(id.contains(&quot;V_&quot;) &amp;&amp; this.vans[0]==null) {</span>
+<span class="nc" id="L278">      System.out.println(&quot;There are no vans currently at the moment.&quot;);</span>
+<span class="nc" id="L279">      return;</span>
+    }
+
+<span class="nc bnc" id="L282" title="All 4 branches missed.">    if(this.vans[0]!=null &amp;&amp; id.contains(&quot;C_&quot;)) {</span>
+<span class="nc" id="L283">      boolean flag =false;</span>
+
+<span class="nc bnc" id="L285" title="All 2 branches missed.">      for(int i=0; this.vans[i]!=null; i++) {</span>
+<span class="nc bnc" id="L286" title="All 2 branches missed.">        if ((this.vans[i].getVehicleId()).equals(id)) {</span>
+<span class="nc bnc" id="L287" title="All 2 branches missed.">          if(this.vans[i].vehicleStatus!=0) {</span>
+<span class="nc" id="L288">            System.out.println(&quot;The car with ID : &quot;+id+&quot; is already either rented or under maintenance, please choose another car.&quot;);</span>
+<span class="nc" id="L289">            return;</span>
+          }
+
+<span class="nc" id="L292">          type=&quot;car&quot;;</span>
+<span class="nc" id="L293">          flag=true;</span>
+<span class="nc" id="L294">          break;</span>
+        }
+      }
+
+<span class="nc bnc" id="L298" title="All 2 branches missed.">      if(!flag) {</span>
+<span class="nc" id="L299">        System.out.println(&quot;ID is incorrect, please try again!&quot;);</span>
+<span class="nc" id="L300">        return;</span>
+      }
+    }
+
+<span class="nc bnc" id="L304" title="All 4 branches missed.">    if(this.vans[0]!=null &amp;&amp; id.contains(&quot;V_&quot;)) {</span>
+<span class="nc" id="L305">      boolean flag =false;</span>
+
+<span class="nc bnc" id="L307" title="All 2 branches missed.">      for(int i=0; this.vans[i]!=null; i++) {</span>
+<span class="nc bnc" id="L308" title="All 2 branches missed.">        if ((this.vans[i].getVehicleId()).equals(id)) {</span>
+<span class="nc bnc" id="L309" title="All 2 branches missed.">          if(this.vans[0].vehicleStatus!=0) {</span>
+<span class="nc" id="L310">            System.out.println(&quot;The van with ID : &quot;+id+&quot; is already either rented or under maintenance. \nPlease choose another van.&quot;);</span>
+<span class="nc" id="L311">            return;</span>
+          }
+
+<span class="nc" id="L314">          type=&quot;van&quot;;</span>
+<span class="nc" id="L315">          flag=true;</span>
+<span class="nc" id="L316">          break;</span>
+        }
+      }
+
+<span class="nc bnc" id="L320" title="All 2 branches missed.">      if(!flag) {</span>
+<span class="nc" id="L321">        System.out.println(&quot;Id is incorrect, please try again!&quot;);</span>
+<span class="nc" id="L322">        return;</span>
+      }
+    }
+
+<span class="nc bnc" id="L326" title="All 4 branches missed.">    if(!(id.contains(&quot;V_&quot;) || id.contains(&quot;C_&quot;))) {</span>
+<span class="nc" id="L327">      System.out.println(&quot;Please Enter a Valid ID either starting from 'V_' or 'C_'.&quot;);</span>
+<span class="nc" id="L328">      return;</span>
+    }
+
+<span class="nc" id="L331">    System.out.print(&quot;Customer ID: &quot;);</span>
+<span class="nc" id="L332">    String cusId = sc.next();</span>
+<span class="nc" id="L333">    System.out.print(&quot;Rent date( dd/mm/yyyy): &quot;);</span>
+<span class="nc" id="L334">    String date = sc.next();</span>
+<span class="nc" id="L335">    format.setLenient(false);</span>
+
+<span class="nc bnc" id="L337" title="All 2 branches missed.">    while(date.trim().length() != ((SimpleDateFormat) format).toPattern().length()) {</span>
+<span class="nc" id="L338">      System.out.println(&quot;Please enter a valid date in the format dd/mm/yyyy: &quot;);</span>
+<span class="nc" id="L339">      date = sc.nextLine();</span>
+    }
+
+<span class="nc" id="L342">    String dates[] = date.split(&quot;/&quot;);</span>
+<span class="nc" id="L343">    DateTime rentDate= new DateTime(Integer.parseInt(dates[0]),Integer.parseInt(dates[1]),Integer.parseInt(dates[2]));</span>
+<span class="nc" id="L344">    System.out.print(&quot;How many days?: &quot;);</span>
+<span class="nc" id="L345">    int days= sc.nextInt();</span>
+
+<span class="nc bnc" id="L347" title="All 2 branches missed.">    if(type.equals(&quot;car&quot;)) {</span>
+<span class="nc bnc" id="L348" title="All 2 branches missed.">      for(int i=0; this.vans[0]!=null; i++) {</span>
+<span class="nc bnc" id="L349" title="All 2 branches missed.">        if ((this.vans[i].getVehicleId()).equals(id)) {</span>
+<span class="nc bnc" id="L350" title="All 2 branches missed.">          if(this.vans[i].rent(cusId,rentDate,days))</span>
+<span class="nc" id="L351">            break;</span>
+          else {
+<span class="nc" id="L353">            System.out.println(&quot;Vehicle &quot;+id+&quot; could not be rented.&quot;);</span>
+<span class="nc" id="L354">            return;</span>
+          }
+        }
+      }
+
+<span class="nc" id="L359">      System.out.println(&quot;Vehicle &quot;+id+&quot; is now rented by customer &quot;+cusId);</span>
+    }
+
+<span class="nc bnc" id="L362" title="All 2 branches missed.">    if(type.equals(&quot;van&quot;)) {</span>
+<span class="nc bnc" id="L363" title="All 2 branches missed.">      for(int i=0; this.vans[i]!=null; i++) {</span>
+<span class="nc bnc" id="L364" title="All 2 branches missed.">        if ((this.vans[i].getVehicleId()).equals(id)) {</span>
+<span class="nc bnc" id="L365" title="All 2 branches missed.">          if(this.vans[i].rent(cusId,rentDate,days))</span>
+<span class="nc" id="L366">            break;</span>
+          else {
+<span class="nc" id="L368">            System.out.println(&quot;Vehicle &quot;+id+&quot; could not be rented&quot;);</span>
+<span class="nc" id="L369">            return;</span>
+          }
+        }
+      }
+
+<span class="nc" id="L374">      System.out.println(&quot;Vehicle &quot;+id+&quot; is now rented by customer &quot;+cusId);</span>
+    }
+<span class="nc" id="L376">  }</span>
+
+  /**
+   * @name returnCar
+     * @param [in] sc [\b Scanner]
+   * Used to return a rented car or van
+   **/
+  private void returnCar(Scanner sc) {
+<span class="nc" id="L384">    System.out.print(&quot;VehicleId: &quot;);</span>
+<span class="nc" id="L385">    String id = sc.next();</span>
+
+<span class="nc bnc" id="L387" title="All 2 branches missed.">    if(this.vans[0]==null ) {</span>
+<span class="nc" id="L388">      System.out.println(&quot;There are no cars, please add cars.&quot;);</span>
+<span class="nc" id="L389">      return;</span>
+    }
+
+<span class="nc bnc" id="L392" title="All 2 branches missed.">    if(this.vans[0]==null ) {</span>
+<span class="nc" id="L393">      System.out.println(&quot;There are no vans, please add cars.&quot;);</span>
+<span class="nc" id="L394">      return;</span>
+    }
+
+<span class="nc bnc" id="L397" title="All 4 branches missed.">    if(this.vans[0]!=null &amp;&amp; id.contains(&quot;C_&quot;)) {</span>
+<span class="nc" id="L398">      boolean flag =false;</span>
+
+<span class="nc bnc" id="L400" title="All 2 branches missed.">      for(int i=0; this.cars[i]!=null; i++) {</span>
+<span class="nc bnc" id="L401" title="All 2 branches missed.">        if ((this.cars[i].getVehicleId()).equals(id)) {</span>
+<span class="nc" id="L402">          System.out.print(&quot;Return date( dd/mm/yyyy): &quot;);</span>
+<span class="nc" id="L403">          String date = sc.next();</span>
+<span class="nc" id="L404">          String dates[] = date.split(&quot;/&quot;);</span>
+<span class="nc" id="L405">          DateTime returnDate= new DateTime(Integer.parseInt(dates[0]),Integer.parseInt(dates[1]),Integer.parseInt(dates[2]));</span>
+
+<span class="nc bnc" id="L407" title="All 2 branches missed.">          if(this.cars[i].returnVehicle(returnDate)) {</span>
+<span class="nc" id="L408">            System.out.println(this.cars[i].records[this.cars[i].getLastElementIndex()].getDetails());</span>
+          } else {
+<span class="nc" id="L410">            System.out.println(&quot;Vehicle cannot be returned as it may have been never rented&quot;);</span>
+<span class="nc" id="L411">            return;</span>
+          }
+
+<span class="nc" id="L414">          flag=true;</span>
+<span class="nc" id="L415">          break;</span>
+        }
+      }
+
+<span class="nc bnc" id="L419" title="All 2 branches missed.">      if(!flag) {</span>
+<span class="nc" id="L420">        System.out.println(&quot;Id is incorrect&quot;);</span>
+<span class="nc" id="L421">        return;</span>
+      }
+    }
+
+<span class="nc bnc" id="L425" title="All 4 branches missed.">    if(this.vans[0]!=null &amp;&amp; id.contains(&quot;V_&quot;)) {</span>
+<span class="nc" id="L426">      boolean flag =false;</span>
+
+<span class="nc bnc" id="L428" title="All 2 branches missed.">      for(int i=0; this.vans[i]!=null; i++) {</span>
+<span class="nc bnc" id="L429" title="All 2 branches missed.">        if ((this.vans[i].getVehicleId()).equals(id)) {</span>
+<span class="nc" id="L430">          System.out.print(&quot;Return date( dd/mm/yyyy): &quot;);</span>
+<span class="nc" id="L431">          String date = sc.next();</span>
+<span class="nc" id="L432">          String dates[] = date.split(&quot;/&quot;);</span>
+<span class="nc" id="L433">          DateTime returndate= new DateTime(Integer.parseInt(dates[0]),Integer.parseInt(dates[1]),Integer.parseInt(dates[2]));</span>
+
+<span class="nc bnc" id="L435" title="All 2 branches missed.">          if(this.vans[i].returnVehicle(returndate)) {</span>
+<span class="nc" id="L436">            System.out.println(this.vans[i].records[this.vans[i].getLastElementIndex()].getDetails());</span>
+          } else {
+<span class="nc" id="L438">            System.out.println(&quot;Vehicle cannot be returned&quot;);</span>
+<span class="nc" id="L439">            return;</span>
+          }
+
+<span class="nc" id="L442">          flag=true;</span>
+<span class="nc" id="L443">          break;</span>
+        }
+      }
+
+<span class="nc bnc" id="L447" title="All 2 branches missed.">      if(!flag) {</span>
+<span class="nc" id="L448">        System.out.println(&quot;Id is incorrect&quot;);</span>
+<span class="nc" id="L449">        return;</span>
+      }
+    }
+<span class="nc" id="L452">  }</span>
+
+  /**
+   * @name vehicleMaintenance
+     * @param [in] sc [\b Scanner]
+   * Method used to set either car or van to maintenance
+   **/
+
+  private void vehicleMaintenance(Scanner sc) {
+<span class="nc" id="L461">    System.out.print(&quot;Vehicle id: &quot;);</span>
+<span class="nc" id="L462">    String id = sc.next();</span>
+
+<span class="nc bnc" id="L464" title="All 2 branches missed.">    if(this.cars[0]==null ) {</span>
+<span class="nc" id="L465">      System.out.println(&quot;There are no cars, please add cars.&quot;);</span>
+<span class="nc" id="L466">      return;</span>
+    }
+
+<span class="nc bnc" id="L469" title="All 2 branches missed.">    if(this.vans[0]==null ) {</span>
+<span class="nc" id="L470">      System.out.println(&quot;There are no vans, please add cars.&quot;);</span>
+<span class="nc" id="L471">      return;</span>
+    }
+
+<span class="nc bnc" id="L474" title="All 4 branches missed.">    if(this.cars[0]!=null &amp;&amp; id.contains(&quot;C_&quot;)) {</span>
+<span class="nc" id="L475">      boolean flag =false;</span>
+
+<span class="nc bnc" id="L477" title="All 2 branches missed.">      for(int i=0; this.cars[i]!=null; i++) {</span>
+<span class="nc bnc" id="L478" title="All 2 branches missed.">        if ((this.cars[i].getVehicleId()).equals(id)) {</span>
+<span class="nc bnc" id="L479" title="All 2 branches missed.">          if(this.cars[i].performMaintenance())</span>
+<span class="nc" id="L480">            System.out.println(&quot;Vehicle &quot;+id+&quot; is now under maintenance&quot;);</span>
+          else {
+<span class="nc" id="L482">            System.out.println(&quot;Vehicle &quot;+id+&quot; could not be sent for maintenance&quot;);</span>
+<span class="nc" id="L483">            return;</span>
+          }
+
+<span class="nc" id="L486">          flag=true;</span>
+<span class="nc" id="L487">          break;</span>
+        }
+      }
+
+<span class="nc bnc" id="L491" title="All 2 branches missed.">      if(!flag) {</span>
+<span class="nc" id="L492">        System.out.println(&quot;Id is incorrect&quot;);</span>
+<span class="nc" id="L493">        return;</span>
+      }
+    }
+
+<span class="nc bnc" id="L497" title="All 4 branches missed.">    if(this.vans[0]!=null &amp;&amp; id.contains(&quot;V_&quot;)) {</span>
+<span class="nc" id="L498">      boolean flag =false;</span>
+
+<span class="nc bnc" id="L500" title="All 2 branches missed.">      for(int i=0; this.vans[i]!=null; i++) {</span>
+<span class="nc bnc" id="L501" title="All 2 branches missed.">        if ((this.vans[i].getVehicleId()).equals(id)) {</span>
+<span class="nc bnc" id="L502" title="All 2 branches missed.">          if(this.vans[i].performMaintenance())</span>
+<span class="nc" id="L503">            System.out.println(&quot;Vehicle &quot;+id+&quot; is now under maintenance&quot;);</span>
+          else {
+<span class="nc" id="L505">            System.out.println(&quot;Vehicle &quot;+id+&quot; could not be sent for maintenance&quot;);</span>
+<span class="nc" id="L506">            return;</span>
+          }
+
+<span class="nc" id="L509">          flag=true;</span>
+<span class="nc" id="L510">          break;</span>
+        }
+      }
+
+<span class="nc bnc" id="L514" title="All 2 branches missed.">      if(!flag) {</span>
+<span class="nc" id="L515">        System.out.println(&quot;Id is incorrect&quot;);</span>
+<span class="nc" id="L516">        return;</span>
+      }
+    }
+<span class="nc" id="L519">  }</span>
+
+  /**
+   * @name completeMaintenance
+     * @param [in] sc [\b Scanner]
+   * Method used to complete maintenance of either car or van
+   **/
+  private void completeMaintenance(Scanner sc) {
+<span class="nc" id="L527">    System.out.print(&quot;Enter vehicle ID: &quot;);</span>
+<span class="nc" id="L528">    String id = sc.next();</span>
+
+<span class="nc bnc" id="L530" title="All 2 branches missed.">    if(this.cars[0]==null ) {</span>
+<span class="nc" id="L531">      System.out.println(&quot;There are no cars, please add cars.&quot;);</span>
+<span class="nc" id="L532">      return;</span>
+    }
+
+<span class="nc bnc" id="L535" title="All 2 branches missed.">    if(this.vans[0]==null ) {</span>
+<span class="nc" id="L536">      System.out.println(&quot;There are no vans, please add cars.&quot;);</span>
+<span class="nc" id="L537">      return;</span>
+    }
+
+<span class="nc bnc" id="L540" title="All 4 branches missed.">    if(this.cars[0]!=null &amp;&amp; id.contains(&quot;C_&quot;)) {</span>
+<span class="nc" id="L541">      boolean flag =false;</span>
+
+<span class="nc bnc" id="L543" title="All 2 branches missed.">      for(int i=0; this.cars[i]!=null; i++) {</span>
+<span class="nc bnc" id="L544" title="All 2 branches missed.">        if ((this.cars[i].getVehicleId()).equals(id)) {</span>
+<span class="nc" id="L545">          System.out.print(&quot;Maintenance completion date (dd/mm/yyyy) :&quot;);</span>
+<span class="nc" id="L546">          String date = sc.next();</span>
+<span class="nc" id="L547">          String dates[] = date.split(&quot;/&quot;);</span>
+<span class="nc" id="L548">          DateTime maintenanceDate= new DateTime(Integer.parseInt(dates[0]),Integer.parseInt(dates[1]),Integer.parseInt(dates[2]));</span>
+
+<span class="nc bnc" id="L550" title="All 2 branches missed.">          if(this.cars[i].completeMaintenance(maintenanceDate))</span>
+<span class="nc" id="L551">            System.out.println(&quot;Vehicle &quot;+id+&quot; has all maintenance completed and ready for rent&quot;);</span>
+          else {
+<span class="nc" id="L553">            System.out.println(&quot;Vehicle &quot;+id+&quot; could not complete maintenance&quot;);</span>
+<span class="nc" id="L554">            return;</span>
+          }
+
+<span class="nc" id="L557">          flag=true;</span>
+<span class="nc" id="L558">          break;</span>
+        }
+      }
+
+<span class="nc bnc" id="L562" title="All 2 branches missed.">      if(!flag) {</span>
+<span class="nc" id="L563">        System.out.println(&quot;ID is incorrect, Please try again&quot;);</span>
+<span class="nc" id="L564">        return;</span>
+      }
+    }
+
+<span class="nc bnc" id="L568" title="All 4 branches missed.">    if(this.vans[0]!=null &amp;&amp; id.contains(&quot;V_&quot;)) {</span>
+<span class="nc" id="L569">      boolean flag =false;</span>
+
+<span class="nc bnc" id="L571" title="All 2 branches missed.">      for(int i=0; this.vans[i]!=null; i++) {</span>
+<span class="nc bnc" id="L572" title="All 2 branches missed.">        if ((this.vans[i].getVehicleId()).equals(id)) {</span>
+<span class="nc" id="L573">          System.out.print(&quot;Maintenance completion date (dd/mm/yyyy) :&quot;);</span>
+<span class="nc" id="L574">          String date = sc.next();</span>
+<span class="nc" id="L575">          String dates[] = date.split(&quot;/&quot;);</span>
+<span class="nc" id="L576">          DateTime maintenanceDate= new DateTime(Integer.parseInt(dates[0]),Integer.parseInt(dates[1]),Integer.parseInt(dates[2]));</span>
+
+<span class="nc bnc" id="L578" title="All 2 branches missed.">          if(this.vans[i].completeMaintenance(maintenanceDate))</span>
+<span class="nc" id="L579">            System.out.println(&quot;Vehicle &quot;+id+&quot; has all maintenance completed and ready for rent&quot;);</span>
+          else {
+<span class="nc" id="L581">            System.out.println(&quot;Vehicle &quot;+id+&quot; could not complete maintenance&quot;);</span>
+<span class="nc" id="L582">            return;</span>
+          }
+
+<span class="nc" id="L585">          flag=true;</span>
+<span class="nc" id="L586">          break;</span>
+        }
+      }
+
+<span class="nc bnc" id="L590" title="All 2 branches missed.">      if(!flag) {</span>
+<span class="nc" id="L591">        System.out.println(&quot;Id is incorrect&quot;);</span>
+<span class="nc" id="L592">        return;</span>
+      }
+    }
+<span class="nc" id="L595">  }</span>
+
+  /**
+   * @name getDetails
+   * Method used to get details of car or van with their rental history
+   **/
+  private void getDetails() {
+<span class="nc bnc" id="L602" title="All 4 branches missed.">    if(cars[0]!=null &amp;&amp; vans[0]!=null) {</span>
+<span class="nc" id="L603">      System.out.println(&quot;There are no cars or vans to display, please enter some vehicles and try again&quot;);</span>
+<span class="nc" id="L604">      return;</span>
+    }
+
+<span class="nc bnc" id="L607" title="All 2 branches missed.">    if(cars[0]!=null) {</span>
+<span class="nc" id="L608">      System.out.println(&quot;***********Vehicle**********&quot;);</span>
+
+<span class="nc bnc" id="L610" title="All 2 branches missed.">      for (int i = 0; this.cars[i] != null; i++)</span>
+<span class="nc" id="L611">        System.out.println(this.cars[i].getDetails());</span>
+    }
+
+<span class="nc bnc" id="L614" title="All 2 branches missed.">    if(vans[0]!=null) {</span>
+<span class="nc" id="L615">      System.out.println(&quot;***********Vehicle**********&quot;);</span>
+
+<span class="nc bnc" id="L617" title="All 2 branches missed.">      for (int i = 0; this.vans[i] != null; i++)</span>
+<span class="nc" id="L618">        System.out.println(this.vans[i].getDetails());</span>
+    }
+<span class="nc" id="L620">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__library" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_library</compoundname>
+    <innerclass refid="classce204__hw4__library_1_1_car" prot="public">ce204_hw4_library::Car</innerclass>
+    <innerclass refid="classce204__hw4__library_1_1_car_rental_system" prot="public">ce204_hw4_library::CarRentalSystem</innerclass>
+    <innerclass refid="classce204__hw4__library_1_1_date_time" prot="public">ce204_hw4_library::DateTime</innerclass>
+    <innerclass refid="classce204__hw4__library_1_1_rental_record" prot="public">ce204_hw4_library::RentalRecord</innerclass>
+    <innerclass refid="classce204__hw4__library_1_1_user" prot="public">ce204_hw4_library::User</innerclass>
+    <innerclass refid="classce204__hw4__library_1_1_van" prot="public">ce204_hw4_library::Van</innerclass>
+    <innerclass refid="classce204__hw4__library_1_1_vehicle" prot="public">ce204_hw4_library::Vehicle</innerclass>
+    <innerclass refid="classce204__hw4__library_1_1_vehicle_type" prot="public">ce204_hw4_library::VehicleType</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library/Car.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

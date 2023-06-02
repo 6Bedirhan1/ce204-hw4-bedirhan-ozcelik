@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Car.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204-hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_library</a> &gt; <span class="el_source">Car.java</span></div><h1>Car.java</h1><pre class="source lang-java linenums">package ce204_hw4_library;
+
+
+public class Car extends  Vehicle {
+
+<span class="fc" id="L6">  private double rate=235;</span>
+<span class="fc" id="L7">  private double rentRate=78;</span>
+  private double lateFee;
+<span class="fc" id="L9">  private int seats=0;</span>
+  private RentalRecord[] rentalRecords;
+  private int rentalRecordCount;
+  /**
+   * @name Car
+   * @param [in] VehicleId [\b String]
+   * @param [in] Year [\b int]
+   * @param [in] Make [\b String]
+   * @param [in] Model [\b String]
+   * @param [in] status [\b int]
+   * @param [in] vehicleType [\b VehicleType]
+   * Class to save all the car details
+   * This class contains all the calculations and details of the car
+   * It extends Vehicle so it has all the features of a vehicle
+   **/
+  public Car(String VehicleId,int Year,String Make,String Model,int status,VehicleType vehicleType) {
+<span class="fc" id="L25">    super(VehicleId,Year,Make,Model,status,vehicleType);</span>
+<span class="fc" id="L26">    this.rentalRecords = new RentalRecord[10];</span>
+<span class="fc" id="L27">    this.rentalRecordCount = 0;</span>
+<span class="fc" id="L28">    seats=vehicleType.getCarSeats();</span>
+<span class="fc" id="L29">  }</span>
+  /**
+   * @name getYear
+   * @retval [\b int]
+   * Used to add either cars or vans to the list
+   **/
+  public int getYear() {
+<span class="fc" id="L36">    return this.Year;</span>
+  }
+  /**
+   * @name getMake
+   * @retval [\b String]
+   * Used to add either cars or vans to the list
+   **/
+  public String getMake() {
+<span class="fc" id="L44">    return this.Make;</span>
+  }
+  /**
+   * @name getModel
+   * @retval [\b String]
+   * Used to add either cars or vans to the list
+   **/
+  public String getModel() {
+<span class="fc" id="L52">    return this.Model;</span>
+  }
+  /**
+   * @name setVehicleStatus
+   * @param [in] status [\b int]
+   * Used to add either cars or vans to the list
+   **/
+  public void setVehicleStatus(int status) {
+<span class="fc" id="L60">    this.vehicleStatus = status;</span>
+<span class="fc" id="L61">  }</span>
+  /**
+   * @name getVehicleStatus
+   * @retval [\b int]
+   * Used to add either cars or vans to the list
+   **/
+  public int getVehicleStatus() {
+<span class="fc" id="L68">    return this.vehicleStatus;</span>
+  }
+  /**
+   * @name getVehicleType
+   * @retval [\b VehicleType]
+   * Used to add either cars or vans to the list
+   **/
+  public VehicleType getVehicleType() {
+<span class="fc" id="L76">    return this.vehicleType;</span>
+  }
+  /**
+   * @name addRentalRecord
+   * @param [in] rentalRecord [\b RentalRecord]
+   * Used to add either cars or vans to the list
+   **/
+  public void addRentalRecord(RentalRecord rentalRecord) {
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">    if (rentalRecordCount &lt; rentalRecords.length) {</span>
+<span class="fc" id="L85">      rentalRecords[rentalRecordCount] = rentalRecord;</span>
+<span class="fc" id="L86">      rentalRecordCount++;</span>
+    }
+<span class="fc" id="L88">  }</span>
+  /**
+   * @name getRentalRecords
+   * @param [in] rentalRecord [\b RentalRecord]
+   * @retval [\b RentalRecord[]]
+   * Used to add either cars or vans to the list
+   **/
+  public RentalRecord[] getRentalRecords() {
+<span class="fc" id="L96">    return rentalRecords;</span>
+  }
+
+  /**
+   * @name getLateFee
+   * @param [in] endDate [\b DateTime]
+   * @param [in] startDate [\b DateTime]
+   * @retval [\b double]
+   * Used to add either cars or vans to the list
+   **/
+  public double getLateFee(DateTime endDate,DateTime startDate) {
+<span class="fc bfc" id="L107" title="All 2 branches covered.">    if(DateTime.diffDays(endDate,startDate)&gt;0)</span>
+<span class="fc" id="L108">      return this.lateFee* DateTime.diffDays(endDate,startDate);</span>
+    else
+<span class="fc" id="L110">      return this.lateFee=0.0;</span>
+  }
+
+  /**
+   * @name returnVehicle
+   * @param [in] returnDate [\b DateTime]
+   * @retval [\b boolean]
+   * Used to add either cars or vans to the list
+   **/
+  public boolean returnVehicle(DateTime returnDate) {
+    String vehicleType;
+
+<span class="fc bfc" id="L122" title="All 2 branches covered.">    if (this.getVehicleId().contains(&quot;C_&quot;))</span>
+<span class="fc" id="L123">      vehicleType = &quot;car&quot;;</span>
+    else
+<span class="fc" id="L125">      vehicleType = &quot;van&quot;;</span>
+
+<span class="fc bfc" id="L127" title="All 2 branches covered.">    if (this.getVehicleStatus() != 0) {</span>
+<span class="fc" id="L128">      RentalRecord lastRentalRecord = this.getRentalRecords()[this.rentalRecordCount - 1];</span>
+<span class="fc" id="L129">      DateTime estimatedDate = lastRentalRecord.getEstimatedReturnDate();</span>
+<span class="fc" id="L130">      DateTime rentDate = lastRentalRecord.getRentDate();</span>
+
+<span class="fc bfc" id="L132" title="All 4 branches covered.">      if (vehicleType.equals(&quot;van&quot;) &amp;&amp; DateTime.diffDays(returnDate, rentDate) &lt; 1) {</span>
+<span class="fc" id="L133">        return false;</span>
+      } else {
+<span class="fc" id="L135">        double rent = this.rate * DateTime.diffDays(returnDate, rentDate);</span>
+<span class="fc" id="L136">        double lateFee = this.getLateFee(returnDate, estimatedDate);</span>
+<span class="fc" id="L137">        this.setVehicleStatus(0);</span>
+<span class="fc" id="L138">        return true;</span>
+      }
+    } else {
+<span class="fc" id="L141">      return false;</span>
+    }
+  }
+
+  /**
+   * @name completeMaintenance
+   * @param [in] completionDate [\b DateTime]
+   * @retval [\b boolean]
+   * sets the vehicle status to available after maintenance
+   **/
+  public boolean completeMaintenance(DateTime completionDate) {
+<span class="pc bpc" id="L152" title="1 of 4 branches missed.">    if(this.vehicleStatus!=2 &amp;&amp; DateTime.diffDays(completionDate,this.vehicleType.getLastMaintenance())&lt;12)</span>
+<span class="fc" id="L153">      return false;</span>
+
+<span class="fc" id="L155">    this.vehicleType.setLastMaintenance(completionDate);</span>
+<span class="fc" id="L156">    this.vehicleStatus=0;</span>
+<span class="fc" id="L157">    return true;</span>
+  }
+
+
+  /**
+   * @name toString
+   * @retval [\b String]
+   * Method used to get details of car with their rental history
+   * Prints the rental record of car
+   **/
+  public String toString() {
+<span class="fc" id="L168">    String details = super.toString();</span>
+<span class="fc" id="L169">    DateTime lastMaintenanceDate= this.vehicleType.getLastMaintenance();</span>
+<span class="fc" id="L170">    details += &quot;:&quot;+ lastMaintenanceDate.toString();</span>
+<span class="fc" id="L171">    return details;</span>
+  }
+
+  /**
+   * @name getDetails
+   * @retval [\b String]
+   * Method used to get details of van with their rental history
+   * Prints the rental record of van
+   **/
+  public String getDetails() {
+<span class="fc" id="L181">    String details = super.getDetails();</span>
+<span class="fc" id="L182">    details += &quot;\nLast maintenance date: &quot;;</span>
+    //        if (this.vehicleType.getLastMaintenance() != null) {
+    //            details += this.vehicleType.getLastMaintenance().toString();
+    //        } else {
+<span class="fc" id="L186">    details += &quot;N/A&quot;; // Varsayılan bir mesaj veya değer</span>
+
+<span class="pc bpc" id="L188" title="1 of 2 branches missed.">    if (this.records[0] == null) {</span>
+<span class="fc" id="L189">      details += &quot;\nRENTAL RECORD:\nempty\n**************\n&quot;;</span>
+      //        } else {
+      //            details += &quot;\nRENTAL RECORD:\n**************\n&quot;;
+      //            int count = 0;
+      //            for (int index = 0; this.records[index] != null; index++) {
+      //                count++;
+      //            }
+      //            for (int index = count - 1; index &gt;= 0; index--) {
+      //                details += this.records[index].getDetails() + &quot;                     \n&quot;;
+      //                for (int innerIndex = 0; innerIndex &lt; 10; innerIndex++) {
+      //                    details += &quot;-&quot;;
+      //                }
+      //                details += &quot;                     \n&quot;;
+      //            }
+    }
+
+<span class="fc" id="L205">    return details;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library_1_1_vehicle" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library::Vehicle</compoundname>
+    <derivedcompoundref refid="classce204__hw4__library_1_1_car" prot="public" virt="non-virtual">ce204_hw4_library.Car</derivedcompoundref>
+    <derivedcompoundref refid="classce204__hw4__library_1_1_van" prot="public" virt="non-virtual">ce204_hw4_library.Van</derivedcompoundref>
+      <sectiondef kind="user-defined">
+      <header>Vehicle</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">VehicleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>String</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Make</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>String</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>String</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vehicleType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold><ref refid="classce204__hw4__library_1_1_vehicle_type" kindref="compound">VehicleType</ref></bold>] the designation of motor vehicle types that include sedans, sport utility vehicles, and trucks, or different categories. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_vehicle_1a0ba0d87115ead5016cc2a8a25f692a92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_library.Vehicle.Vehicle</definition>
+        <argsstring>(String VehicleId, int Year, String Make, String Model, int status, VehicleType vehicleType)</argsstring>
+        <name>Vehicle</name>
+        <param>
+          <type>String</type>
+          <declname>VehicleId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Year</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>Make</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>Model</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type><ref refid="classce204__hw4__library_1_1_vehicle_type" kindref="compound">VehicleType</ref></type>
+          <declname>vehicleType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="23" column="10" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="23" bodyend="30"/>
+        <references refid="classce204__hw4__library_1_1_vehicle_1a89364eec3bfc33bbc14b70242b9a4825" compoundref="_vehicle_8java" startline="6">ce204_hw4_library.Vehicle.Make</references>
+        <references refid="classce204__hw4__library_1_1_vehicle_1ad4c4460a5aa6836a9621a0607073b25b" compoundref="_vehicle_8java" startline="7">ce204_hw4_library.Vehicle.Model</references>
+        <references refid="classce204__hw4__library_1_1_vehicle_1a1ad95d6ba5aba326524683cd215e72c0" compoundref="_vehicle_8java" startline="9">ce204_hw4_library.Vehicle.vehicleType</references>
+        <references refid="classce204__hw4__library_1_1_vehicle_1afb7fb8aac47377fcdfc366a8c16c00dd" compoundref="_vehicle_8java" startline="5">ce204_hw4_library.Vehicle.Year</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getVehicleId</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_vehicle_1abe949825949e841f113ac431584c1052" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.Vehicle.getVehicleId</definition>
+        <argsstring>()</argsstring>
+        <name>getVehicleId</name>
+        <reimplementedby refid="classce204__hw4__library_1_1_van_1a6921a8ca59780a70e42c2e8fe16fd56f">getVehicleId</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="37" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="37" bodyend="39"/>
+        <references refid="classce204__hw4__library_1_1_vehicle_1ab56a1440858a0a69567099952dd5a826" compoundref="_vehicle_8java" startline="4">ce204_hw4_library.Vehicle.Vehicle_id</references>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a7fc22bfdeb785cb4db9dd0279959dcdf" compoundref="_car_8java" startline="119" endline="143">ce204_hw4_library.Car.returnVehicle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>rent</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">customerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>String</bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rentDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></bold>] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">numOfRentDay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[<bold>int</bold>] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_vehicle_1aaf7338b17598d33e58f16e4ce4c63c4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ce204_hw4_library.Vehicle.rent</definition>
+        <argsstring>(String customerId, DateTime rentDate, int numOfRentDay)</argsstring>
+        <name>rent</name>
+        <param>
+          <type>String</type>
+          <declname>customerId</declname>
+        </param>
+        <param>
+          <type><ref refid="classce204__hw4__library_1_1_date_time" kindref="compound">DateTime</ref></type>
+          <declname>rentDate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numOfRentDay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="49" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="49" bodyend="76"/>
+        <references refid="classce204__hw4__library_1_1_vehicle_type_1a8b230ebf2b268a48545328ae28f75e28" compoundref="_vehicle_type_8java" startline="104" endline="113">ce204_hw4_library.VehicleType.canBeRentedForMinimumDays</references>
+        <references refid="classce204__hw4__library_1_1_vehicle_1ae0429390ff14bd930a006b8f11a3808a" compoundref="_vehicle_8java" startline="142" endline="148">ce204_hw4_library.Vehicle.getLastElementIndex</references>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a7fc22bfdeb785cb4db9dd0279959dcdf" compoundref="_car_8java" startline="119" endline="143">ce204_hw4_library.Car.returnVehicle</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a0a021645c9edd9ecff298897601f155a" compoundref="_van_8java" startline="121" endline="145">ce204_hw4_library.Van.returnVehicle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>performMaintenance</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_vehicle_1adb7f14f2c9c5ed0e7d7fb13ad644c610" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ce204_hw4_library.Vehicle.performMaintenance</definition>
+        <argsstring>()</argsstring>
+        <name>performMaintenance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="82" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="82" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>toString</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_vehicle_1ada6e30c79ed4fc56ec07616aff0bc8dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.Vehicle.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplementedby refid="classce204__hw4__library_1_1_car_1a83836384ff21c35ec627d9dc7b2087de">toString</reimplementedby>
+        <reimplementedby refid="classce204__hw4__library_1_1_van_1a98cc0a70219af20033fc1553903e3b48">toString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="93" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="93" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getDetails</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_vehicle_1afdefb381c0bb8527fa55782f0c1534c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_library.Vehicle.getDetails</definition>
+        <argsstring>()</argsstring>
+        <name>getDetails</name>
+        <reimplementedby refid="classce204__hw4__library_1_1_car_1ad940f6e27b9d57438bb900f04bfba4aa">getDetails</reimplementedby>
+        <reimplementedby refid="classce204__hw4__library_1_1_van_1a4764347195c34aac3da2ce3da465bbf0">getDetails</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="118" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="118" bodyend="135"/>
+        <references refid="classce204__hw4__library_1_1_vehicle_type_1ad6b322d5d417742c627711c2ea658648" compoundref="_vehicle_type_8java" startline="38" endline="44">ce204_hw4_library.VehicleType.getSeats</references>
+        <references refid="classce204__hw4__library_1_1_vehicle_1ad4c4460a5aa6836a9621a0607073b25b" compoundref="_vehicle_8java" startline="7">ce204_hw4_library.Vehicle.Model</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getLastElementIndex</header>
+      <description><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>[</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce204__hw4__library_1_1_vehicle_1ae0429390ff14bd930a006b8f11a3808a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_library.Vehicle.getLastElementIndex</definition>
+        <argsstring>()</argsstring>
+        <name>getLastElementIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="142" column="14" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="142" bodyend="148"/>
+        <referencedby refid="classce204__hw4__library_1_1_vehicle_1aaf7338b17598d33e58f16e4ce4c63c4e" compoundref="_vehicle_8java" startline="49" endline="76">ce204_hw4_library.Vehicle.rent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_vehicle_1ab56a1440858a0a69567099952dd5a826" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_library.Vehicle.Vehicle_id</definition>
+        <argsstring></argsstring>
+        <name>Vehicle_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="4" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="4" bodyend="-1"/>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a6921a8ca59780a70e42c2e8fe16fd56f" compoundref="_van_8java" startline="30" endline="32">ce204_hw4_library.Van.getVehicleId</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_vehicle_1abe949825949e841f113ac431584c1052" compoundref="_vehicle_8java" startline="37" endline="39">ce204_hw4_library.Vehicle.getVehicleId</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_vehicle_1afb7fb8aac47377fcdfc366a8c16c00dd" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_library.Vehicle.Year</definition>
+        <argsstring></argsstring>
+        <name>Year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="5" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="5" bodyend="-1"/>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a982d928640517d4cd0d8ad8c4ae33466" compoundref="_car_8java" startline="24" endline="29">ce204_hw4_library.Car.Car</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a540d9d67ae5143dc97e526c8ad37d04a" compoundref="_car_8java" startline="35" endline="37">ce204_hw4_library.Car.getYear</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1ace798d6d8e4f04e08ce6949489bac96e" compoundref="_van_8java" startline="38" endline="40">ce204_hw4_library.Van.getYear</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_vehicle_1a0ba0d87115ead5016cc2a8a25f692a92" compoundref="_vehicle_8java" startline="23" endline="30">ce204_hw4_library.Vehicle.Vehicle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_vehicle_1a89364eec3bfc33bbc14b70242b9a4825" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_library.Vehicle.Make</definition>
+        <argsstring></argsstring>
+        <name>Make</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="6" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="6" bodyend="-1"/>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a982d928640517d4cd0d8ad8c4ae33466" compoundref="_car_8java" startline="24" endline="29">ce204_hw4_library.Car.Car</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1aa938824260708b5aa4442b58bbddf3fe" compoundref="_car_8java" startline="43" endline="45">ce204_hw4_library.Car.getMake</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a7c1f14731f2953ba0a62ff1c482a9311" compoundref="_van_8java" startline="46" endline="48">ce204_hw4_library.Van.getMake</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_vehicle_1a0ba0d87115ead5016cc2a8a25f692a92" compoundref="_vehicle_8java" startline="23" endline="30">ce204_hw4_library.Vehicle.Vehicle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_vehicle_1ad4c4460a5aa6836a9621a0607073b25b" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_library.Vehicle.Model</definition>
+        <argsstring></argsstring>
+        <name>Model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="7" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="7" bodyend="-1"/>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a982d928640517d4cd0d8ad8c4ae33466" compoundref="_car_8java" startline="24" endline="29">ce204_hw4_library.Car.Car</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_vehicle_1afdefb381c0bb8527fa55782f0c1534c4" compoundref="_vehicle_8java" startline="118" endline="135">ce204_hw4_library.Vehicle.getDetails</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1aaee9e117f111ff0538f4fef7b23ca4a8" compoundref="_car_8java" startline="51" endline="53">ce204_hw4_library.Car.getModel</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1af956a206c4a271dc665fdc2e5f98f1e1" compoundref="_van_8java" startline="54" endline="56">ce204_hw4_library.Van.getModel</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_vehicle_1a0ba0d87115ead5016cc2a8a25f692a92" compoundref="_vehicle_8java" startline="23" endline="30">ce204_hw4_library.Vehicle.Vehicle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_vehicle_1a1ad95d6ba5aba326524683cd215e72c0" prot="protected" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library_1_1_vehicle_type" kindref="compound">VehicleType</ref></type>
+        <definition>VehicleType ce204_hw4_library.Vehicle.vehicleType</definition>
+        <argsstring></argsstring>
+        <name>vehicleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="9" column="25" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="9" bodyend="-1"/>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a982d928640517d4cd0d8ad8c4ae33466" compoundref="_car_8java" startline="24" endline="29">ce204_hw4_library.Car.Car</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a9b4ba6f85966bcf9d5d17d6e87ce9fc8" compoundref="_car_8java" startline="151" endline="158">ce204_hw4_library.Car.completeMaintenance</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1ab59cb8edb63b5cab2a2f38a8c0844c90" compoundref="_van_8java" startline="153" endline="160">ce204_hw4_library.Van.completeMaintenance</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1affd6df5570a0d511ad065eb552de8089" compoundref="_car_8java" startline="75" endline="77">ce204_hw4_library.Car.getVehicleType</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a94eaac95d934f1041caa1829fbdc6bf6" compoundref="_van_8java" startline="70" endline="72">ce204_hw4_library.Van.getVehicleType</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a7fc22bfdeb785cb4db9dd0279959dcdf" compoundref="_car_8java" startline="119" endline="143">ce204_hw4_library.Car.returnVehicle</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a0a021645c9edd9ecff298897601f155a" compoundref="_van_8java" startline="121" endline="145">ce204_hw4_library.Van.returnVehicle</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a83836384ff21c35ec627d9dc7b2087de" compoundref="_car_8java" startline="167" endline="172">ce204_hw4_library.Car.toString</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a98cc0a70219af20033fc1553903e3b48" compoundref="_van_8java" startline="167" endline="172">ce204_hw4_library.Van.toString</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a149543bbb395396b65811abd3960a860" compoundref="_van_8java" startline="20" endline="24">ce204_hw4_library.Van.Van</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_vehicle_1a0ba0d87115ead5016cc2a8a25f692a92" compoundref="_vehicle_8java" startline="23" endline="30">ce204_hw4_library.Vehicle.Vehicle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_vehicle_1ae78ceb61886cd7bdd1caa8f958b57929" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_library.Vehicle.vehicleStatus</definition>
+        <argsstring></argsstring>
+        <name>vehicleStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="8" column="14" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a9b4ba6f85966bcf9d5d17d6e87ce9fc8" compoundref="_car_8java" startline="151" endline="158">ce204_hw4_library.Car.completeMaintenance</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1ab59cb8edb63b5cab2a2f38a8c0844c90" compoundref="_van_8java" startline="153" endline="160">ce204_hw4_library.Van.completeMaintenance</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a87f8eaea4badbe7109224fcf8e47ee20" compoundref="_van_8java" startline="62" endline="64">ce204_hw4_library.Van.getStatus</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a661cb3fc1819b77be1800103cdd88bfc" compoundref="_car_8java" startline="67" endline="69">ce204_hw4_library.Car.getVehicleStatus</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_car_1a1adf41fa7d6bfb75857453b8fe2faa72" compoundref="_car_8java" startline="59" endline="61">ce204_hw4_library.Car.setVehicleStatus</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a952178c00819f3866373a2c2744a55c3" compoundref="_van_8java" startline="78" endline="80">ce204_hw4_library.Van.setVehicleStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library_1_1_vehicle_1aefea5ef18b8e3498665847f754bb32e3" prot="public" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library_1_1_rental_record" kindref="compound">RentalRecord</ref></type>
+        <definition>RentalRecord ce204_hw4_library.Vehicle.records[]</definition>
+        <argsstring>[]</argsstring>
+        <name>records</name>
+        <initializer>= new <ref refid="classce204__hw4__library_1_1_rental_record" kindref="compound">RentalRecord</ref>[10]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="10" column="23" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="10" bodyend="-1"/>
+        <referencedby refid="classce204__hw4__library_1_1_car_1ad940f6e27b9d57438bb900f04bfba4aa" compoundref="_car_8java" startline="180" endline="206">ce204_hw4_library.Car.getDetails</referencedby>
+        <referencedby refid="classce204__hw4__library_1_1_van_1a4764347195c34aac3da2ce3da465bbf0" compoundref="_van_8java" startline="180" endline="206">ce204_hw4_library.Van.getDetails</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ce204_hw4_library.Car</label>
+        <link refid="classce204__hw4__library_1_1_car"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_library.Vehicle</label>
+        <link refid="classce204__hw4__library_1_1_vehicle"/>
+      </node>
+      <node id="3">
+        <label>ce204_hw4_library.Van</label>
+        <link refid="classce204__hw4__library_1_1_van"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ce204_hw4_library.RentalRecord</label>
+        <link refid="classce204__hw4__library_1_1_rental_record"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_library.Vehicle</label>
+        <link refid="classce204__hw4__library_1_1_vehicle"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>vehicleType</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>records</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ce204_hw4_library.DateTime</label>
+        <link refid="classce204__hw4__library_1_1_date_time"/>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library.VehicleType</label>
+        <link refid="classce204__hw4__library_1_1_vehicle_type"/>
+      </node>
+    </collaborationgraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" line="3" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library/Vehicle.java" bodystart="3" bodyend="149"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library_1_1_vehicle_1afdefb381c0bb8527fa55782f0c1534c4" prot="public" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>getDetails</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1ae0429390ff14bd930a006b8f11a3808a" prot="public" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>getLastElementIndex</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1abe949825949e841f113ac431584c1052" prot="public" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>getVehicleId</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1a89364eec3bfc33bbc14b70242b9a4825" prot="protected" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>Make</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1ad4c4460a5aa6836a9621a0607073b25b" prot="protected" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>Model</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1adb7f14f2c9c5ed0e7d7fb13ad644c610" prot="public" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>performMaintenance</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1aefea5ef18b8e3498665847f754bb32e3" prot="public" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>records</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1aaf7338b17598d33e58f16e4ce4c63c4e" prot="public" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>rent</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1ada6e30c79ed4fc56ec07616aff0bc8dd" prot="public" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>toString</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1a0ba0d87115ead5016cc2a8a25f692a92" prot="public" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>Vehicle</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1ab56a1440858a0a69567099952dd5a826" prot="protected" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>Vehicle_id</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1ae78ceb61886cd7bdd1caa8f958b57929" prot="public" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>vehicleStatus</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1a1ad95d6ba5aba326524683cd215e72c0" prot="protected" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>vehicleType</name></member>
+      <member refid="classce204__hw4__library_1_1_vehicle_1afb7fb8aac47377fcdfc366a8c16c00dd" prot="protected" virt="non-virtual"><scope>ce204_hw4_library::Vehicle</scope><name>Year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

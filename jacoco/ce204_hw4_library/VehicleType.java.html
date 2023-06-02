@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>VehicleType.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204-hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_library</a> &gt; <span class="el_source">VehicleType.java</span></div><h1>VehicleType.java</h1><pre class="source lang-java linenums">package ce204_hw4_library;
+
+public class VehicleType {
+
+  private int carSeats;
+<span class="fc" id="L6">  private int vanSeats=15;</span>
+  private DateTime LastMaintenance;
+<span class="fc" id="L8">  private String[] days = {&quot;Sunday&quot;,&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;};</span>
+
+
+  //Constructor of Car type
+  /**
+   * @name VehicleType
+   * @param [in] seats [\b int]
+   * Declarations for all attributes that belong in this class.
+   **/
+<span class="fc" id="L17">  public VehicleType(int seats) {</span>
+<span class="fc" id="L18">    this.carSeats=seats;</span>
+<span class="fc" id="L19">  }</span>
+  //Constructor for Van type
+  /**
+   * @name VehicleType
+   * @param [in] LastMaintenance [\b DateTime]
+   * @param [in] seats [\b int]
+   * Declarations for all attributes that belong in this class.
+   **/
+<span class="fc" id="L27">  public VehicleType(int seats,DateTime LastMaintenance) {</span>
+<span class="fc" id="L28">    this.vanSeats=seats;</span>
+<span class="fc" id="L29">    this.LastMaintenance=LastMaintenance;</span>
+<span class="fc" id="L30">  }</span>
+
+  /**
+   * @name getSeats
+   * @param [in] type [\b String]
+   * @retval [\b int]
+   * method to get seats of vehicle by accepting type of vehicle
+   **/
+  public int getSeats(String type) {
+<span class="fc bfc" id="L39" title="All 2 branches covered.">    if(type.equals(&quot;car&quot;)) {</span>
+<span class="fc" id="L40">      return this.carSeats;</span>
+    } else {
+<span class="fc" id="L42">      return this.vanSeats;</span>
+    }
+  }
+
+  /**
+   * @name getCarSeats
+   * @retval [\b int]
+   * method to get seats of vehicle
+   **/
+  public int getCarSeats() {
+<span class="fc" id="L52">    return this.carSeats;</span>
+  }
+
+  /**
+   * @name setCarSeats
+   * @param [in] seats [\b int]
+   * method to set seats of vehicle by accepting seats
+   **/
+  public void setCarSeats(int seats) {
+<span class="fc" id="L61">    this.carSeats=seats;</span>
+<span class="fc" id="L62">  }</span>
+
+  /**
+   * @name indexOf
+   * @param [in] day [\b String]
+   * @retval [\b int]
+   * method to get index from the days array
+   **/
+  public int indexOf(String day) {
+<span class="fc bfc" id="L71" title="All 2 branches covered.">    for(int index=0; index&lt;days.length; index++)</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">      if(days[index].equals(day))</span>
+<span class="fc" id="L73">        return index;</span>
+
+<span class="fc" id="L75">    return 0;</span>
+  }
+
+  /**
+   * @name getLastMaintenance
+   * @retval [\b DateTime]
+   * method to get Last Maintenance
+   **/
+  public DateTime getLastMaintenance() {
+<span class="fc" id="L84">    return this.LastMaintenance;</span>
+  }
+
+  /**
+   * @name setLastMaintenance
+   * @param [in] day [\b DateTime]
+   * Lists in Java are ordered collection of data
+   **/
+  public void setLastMaintenance(DateTime date) {
+<span class="fc" id="L93">    this.LastMaintenance=date;</span>
+<span class="fc" id="L94">  }</span>
+
+  /**
+   * @name canBeRentedForMinimumDays
+   * @param [in] date [\b DateTime]
+   * @param [in] type [\b String]
+   * @retval [\b int]
+   * checking which day the vehicle is being rented and setting minimum days it can be rented
+   * method to check whether a vehicle can be rented for a specific number of days
+   **/
+  public int canBeRentedForMinimumDays(DateTime date,String type) {
+    //        if(this.indexOf(date.getNameOfDay())+1&lt;=5 &amp;&amp; this.indexOf(date.getNameOfDay())+1&gt;=1 &amp;&amp; type.equals(&quot;car&quot;)){
+    //            return 2;
+    //        }
+<span class="fc bfc" id="L108" title="All 2 branches covered.">    if(type.equals(&quot;car&quot;)) {</span>
+<span class="fc" id="L109">      return 3;</span>
+    } else {
+<span class="fc" id="L111">      return 1; //van can be rented only 1 day</span>
+    }
+  }
+
+  /**
+   * @name IsUnderMaintenance
+   * @param [in] rentDate [\b DateTime]
+   * @param [in] type [\b String]
+   * @param [in] numOfRentDays [\b int]
+   * @retval [\b boolean]
+   * method to check whether a vehicle is under maintenance or not
+   **/
+  public boolean IsUnderMaintenance(DateTime rentDate,String type,int numOfRentDays) {
+<span class="fc" id="L124">    DateTime nextMaintenance=new DateTime(this.LastMaintenance,12);</span>
+
+    //        if(type.equals(&quot;van&quot;) &amp;&amp; DateTime.diffDays(nextMaintenance,new DateTime(rentDate,numOfRentDays))&gt;=0 &amp;&amp; numOfRentDays&lt;=12)
+    //        {
+    //            return false;
+    //        }
+<span class="fc bfc" id="L130" title="All 2 branches covered.">    if(type.equals(&quot;car&quot;)) {</span>
+<span class="fc" id="L131">      return false;</span>
+    } else {
+<span class="fc" id="L133">      return true;</span>
+    }
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

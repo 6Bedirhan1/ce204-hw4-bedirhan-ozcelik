@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ce204__hw4__app_8java" kind="file" language="Java">
+    <compoundname>ce204_hw4_app.java</compoundname>
+    <innerclass refid="classce204__hw4__app_1_1ce204__hw4__app" prot="public">ce204_hw4_app::ce204_hw4_app</innerclass>
+    <innernamespace refid="namespacece204__hw4__app">ce204_hw4_app</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_app;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacece204__hw4__library" kindref="compound">ce204_hw4_library</ref>.*;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classce204__hw4__app_1_1ce204__hw4__app" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="namespacece204__hw4__app" kindref="compound">ce204_hw4_app</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classce204__hw4__app_1_1ce204__hw4__app_1a46749aef1e87729eb4dab6de8ad7123a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1ce204__hw4__app_1a46749aef1e87729eb4dab6de8ad7123a" kindref="member">main</ref>(String[]<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>Auto-generated<sp/>method<sp/>stub</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__library_1_1_car_rental_system" kindref="compound">CarRentalSystem</ref><sp/>rentSystem<sp/>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library_1_1_car_rental_system" kindref="compound">CarRentalSystem</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>rentSystem.<ref refid="classce204__hw4__library_1_1_car_rental_system_1a4dce3ce5cb0db5cfb385b8f493c44f3a" kindref="member">loginPage</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_app/ce204_hw4_app.java"/>
+  </compounddef>
+</doxygen>
