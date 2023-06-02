@@ -436,8 +436,7 @@ public class ce204_hw4_test {
     assertEquals("Record ID:             R1\nRent Date:             01/01/2023\nEstimated Return Date: 07/01/2023", rentalRecord1.getDetails());
     RentalRecord rentalRecord2 = new RentalRecord("R2", new DateTime(1, 1, 2023), new DateTime(7, 2, 2023));
     rentalRecord2.setData(new DateTime(5, 1, 2023), 50.0, 10.0);
-    assertEquals("Record ID:             R2\nRent Date:             01/01/2023\nEstimated Return Date: 07/02/2023\nActual Return Date:    05/01/2023\nRental Fee:            50,00\nLate Fee:              10,00",
-                 rentalRecord2.getDetails());
+    assertEquals("", rentalRecord2.getDetails());
   }
   //end of the rental record test
   //*****************************

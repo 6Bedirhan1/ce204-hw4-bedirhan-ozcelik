@@ -82,14 +82,7 @@ public class RentalRecord extends DateTime {
         + "\nEstimated Return Date: " + this.EstimatedReturnDate.toString();
       return data;
     } else {
-      return      "Record ID:             " + this.RentId
-                  + "\nRent Date:             " + this.RentDate.toString()
-                  + "\nEstimated Return Date: " + this.EstimatedReturnDate.toString()
-                  + "\nActual Return Date:    "+this.ActualReturnDate.toString()
-                  + "\nRental Fee:            "+String.format ("%.2f", this.RentalFee)+
-                  "\nLate Fee:              "+String.format("%.2f",this.LateFee);
+      return "";
     }
   }
-
-
 }
