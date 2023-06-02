@@ -482,8 +482,8 @@ public class ce204_hw4_test {
 
   @Test
   public void testDateTimeGetNameOfDay() {
-    DateTime dt = new DateTime(17, 3, 2023); // Saturday
-    assertEquals("Cuma", dt.getNameOfDay());
+    DateTime dt = new DateTime(2, 11, 2021); // Saturday
+    assertEquals("Tuesday", dt.getNameOfDay());
   }
 
   @Test

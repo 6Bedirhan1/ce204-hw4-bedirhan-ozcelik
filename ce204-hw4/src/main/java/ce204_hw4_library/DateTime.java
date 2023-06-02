@@ -1,6 +1,7 @@
 package ce204_hw4_library;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 import java.util.Objects;
 import java.sql.Date;
 
@@ -62,9 +63,9 @@ public class DateTime {
      * The following example shows a few of these methods.
      **/
   public String getNameOfDay() {
-    SimpleDateFormat sdf = new SimpleDateFormat("EEEE");
-    return sdf.format(time);
-  }
+	    SimpleDateFormat sdf = new SimpleDateFormat("EEEE", Locale.ENGLISH);
+	    return sdf.format(time);
+	}
   /**
      * @name toString
      * @retval [\b String]
