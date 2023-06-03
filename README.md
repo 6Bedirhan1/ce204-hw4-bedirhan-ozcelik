@@ -1,49 +1,49 @@
-#Car Rental System Console Application
+# Car Rental System Console Application
 
-#Team Members: Bedirhan OZCELIK & Sema Nur ERSOY
+## Team Members: Bedirhan OZCELIK & Sema Nur ERSOY
 
 Bedirhan OZCELIK
 
-<img src="assets/2023-06-03 044712.png" title="" alt="" width="347">
+![Bedirhan OZCELIK](assets/2023-06-03 044712.png)
 
 Sema Nur ERSOY
 
-<img title="" src="assets/2023-06-03 044756.png" alt="" width="346">
+![Sema Nur ERSOY](assets/2023-06-03 044756.png)
 
-#Images of Our App
+## Images of Our App
 
-Login Section
+### Login Section
 
-<img title="" src="assets/2023-06-03 051152.png" alt="" width="210">
+![Login Section](assets/2023-06-03 051152.png)
 
-Main Section
+### Main Section
 
-<img title="" src="assets/2023-06-03 051227.png" alt="" width="260">
+![Main Section](assets/2023-06-03 051227.png)
 
-Add Vehicle Section
+### Add Vehicle Section
 
-<img title="" src="assets/2023-06-03 051341.png" alt="" width="410">
+![Add Vehicle Section](assets/2023-06-03 051341.png)
 
-Registered Vehicles Section
+### Registered Vehicles Section
 
-<img title="" src="assets/2023-06-03 051409.png" alt="" width="260">
+![Registered Vehicles Section](assets/2023-06-03 051409.png)
 
-#Images of Our Website
+## Images of Our Website
 
-Homepage
+### Homepage
 
-<img src="assets/2023-06-03 042705.png" title="" alt="" width="667">
+![Homepage](assets/2023-06-03 042705.png)
 
-JaCoCo Report
+### JaCoCo Report
 
-<img src="assets/2023-06-03 042809.png" title="" alt="" width="654">
+![JaCoCo Report](assets/2023-06-03 042809.png)
 
-Report Generator
+### Report Generator
 
-<img src="assets/2023-06-03 042913.png" title="" alt="" width="646">
+![Report Generator](assets/2023-06-03 042913.png)
 
-Doxygen Report
+### Doxygen Report
 
-<img src="assets/2023-06-03 042959.png" title="" alt="" width="649">
+![Doxygen Report](assets/2023-06-03 042959.png)
 
 End of the Readme.md file
