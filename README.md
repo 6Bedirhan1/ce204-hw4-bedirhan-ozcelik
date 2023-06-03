@@ -46,6 +46,4 @@ Doxygen Report
 
 <img src="assets/2023-06-03 042959.png" title="" alt="" width="649">
 
-Coveryxgen Report
-
-<img title="" src="assets/2023-06-03 043037.png" alt="" width="653">
+End of the Readme.md file
