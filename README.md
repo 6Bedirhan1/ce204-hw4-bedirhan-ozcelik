@@ -3,15 +3,17 @@
 # Team Members: Bedirhan OZCELIK & Sema Nur ERSOY
 
 Bedirhan OZCELIK
-![](assets/2023-06-03 044712.png)
+
+
+<img src="assets/2023-06-03 044712.png" title="" alt="" width="347">
 Sema Nur ERSOY
-![](assets/2023-06-03 044756.png)
+<img src="assets/2023-06-03 044756.png" title="" alt="" width="288">
 
 Our Website Homepage
-![](assets/2023-06-03 042705.png)
+<img src="assets/2023-06-03 042705.png" title="" alt="" width="667">
 
 JaCoCo Report
-![](assets/2023-06-03 042809.png)
+<img src="assets/2023-06-03 042809.png" title="" alt="" width="654">
 
 Report Generator
 ![](assets/2023-06-03 042913.png)
